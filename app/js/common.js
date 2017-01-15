@@ -5,10 +5,10 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
   $('input[type="tel"]').val(localStorage.phone);
 }
 
-(function() {
+$(function() {
   $("[name=send]").click(function (e) {
    var btn = $(this);
-   var $form = $(this).closest('form');
+   var form = $(this).closest('form');
 
    $(":input.error").removeClass('error');
    $(".allert").remove();
@@ -61,7 +61,6 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
     $(send_btn).each(function() {
       $(this).attr('disabled', true);
     });
-
     $.ajax({
       type: 'POST',
       url: send_adress,
@@ -90,10 +89,10 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
          type: 'POST',
          url: 'db/registration.php',
          dataType: 'json',
-         data: $form.serialize(),
+         data: form.serialize(),
          success: function(response) {
            console.info(response);
-           console.log($form.serialize());
+           console.log(form.serialize());
            if (response.status == 'success') {
             $('form').trigger("reset");
             window.location.href = 'http://allinsol.com/bootcamp/success/';
@@ -220,45 +219,45 @@ $('*').click(function() {
 
 // Perfect Pxel
 
-$('body').each(function() {
-  var body = $(this);
-  var img_url = $(this).data('img');
-  var img = new Image();
-  img.src = img_url;
-  img.onload = function(){
-    var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-    var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-    body.append(ppbox);
-    body.append(ppbtn);
-  };
-});
-function myOff() {
-  var ppbtntext = $('#ppbtn').text();
-  if (ppbtntext == 'ON') {
-    $('#ppbtn').text('OFF');
-    $('#pp').css('display', 'none');
-  } else {
-    $('#ppbtn').text('ON');
-    $('#pp')        .css({
-      ' z-index' : '1000000',
-      display: 'block'
-    });
+// $('body').each(function() {
+//   var body = $(this);
+//   var img_url = $(this).data('img');
+//   var img = new Image();
+//   img.src = img_url;
+//   img.onload = function(){
+//     var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
+//     var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
+//     body.append(ppbox);
+//     body.append(ppbtn);
+//   };
+// });
+// function myOff() {
+//   var ppbtntext = $('#ppbtn').text();
+//   if (ppbtntext == 'ON') {
+//     $('#ppbtn').text('OFF');
+//     $('#pp').css('display', 'none');
+//   } else {
+//     $('#ppbtn').text('ON');
+//     $('#pp')        .css({
+//       ' z-index' : '1000000',
+//       display: 'block'
+//     });
 
-  }
-}
+//   }
+// }
 
-$('html').keydown(function(){
-  var ppbtntext = $('#ppbtn').text();
-  if (event.keyCode == 81) {
-    if (ppbtntext == 'ON') {
-      $('#ppbtn').text('OFF');
-      $('#pp').css('display', 'none');
-    } else {
-      $('#ppbtn').text('ON');
-      $('#pp')        .css({
-        ' z-index' : '1000000',
-        display: 'block'
-      });
-    }
-  }
-});
+// $('html').keydown(function(){
+//   var ppbtntext = $('#ppbtn').text();
+//   if (event.keyCode == 81) {
+//     if (ppbtntext == 'ON') {
+//       $('#ppbtn').text('OFF');
+//       $('#pp').css('display', 'none');
+//     } else {
+//       $('#ppbtn').text('ON');
+//       $('#pp')        .css({
+//         ' z-index' : '1000000',
+//         display: 'block'
+//       });
+//     }
+//   }
+// });
