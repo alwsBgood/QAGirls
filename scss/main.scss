@@ -3,12 +3,81 @@
 
 //Custom Styles Here
 
-form{
-  width: 400px;
-  margin: 40px auto;
-  .field{
-    width: 100%;
-    margin: 5px 0;
+#sec_02{
+  padding: 45px 0 100px;
+  h2{
+    margin-left: 100px;
+    margin-bottom: -30px;
+    position: relative;
+    z-index: 2;
+  }
+  .tr{
+    .title_block{
+      margin-top: -103px;
+      position: relative;
+      z-index: 1;
+      background-position: bottom right;
+    }
+    .text_block{
+      position: relative;
+      margin-bottom: 100px;
+      color: #000;
+      font-size: 48px;
+      line-height: 50px;
+      text-align: center;
+      margin-top: 95px;
+      background: url(../img/sec_02-block_bg.png) center no-repeat;
+    }
+    .text_block:before{
+      position: absolute;
+      content: '';
+      width: 500px;
+      height:310px;
+      left: -187px;
+      top: -134px;
+      z-index: -1;
+      background: url(../img/pluses_pattern.png) center no-repeat;
+    }
+  }
+  .col-7{
+    padding-left: 110px;
+    .title_block{
+      margin-top: 45px;
+    }
+    ul{
+      margin-top: 24px;
+      margin-left: 23px;
+      .title{margin-bottom: 5px;}
+      .text{line-height: 28px;}
+      li+li{margin-top: 16px;}
+    }
+  }
+  .text_block_pink{
+    text-align: center;
+    position: relative;
+    padding: 35px 0 23px;
+    margin-top: 78px;
+    .pink{line-height: 30px;}
+    .italic{
+      font-size: 48px;
+      line-height: 53px;
+    }
+  }
+  .text_block_pink:before, .text_block_pink:after{
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 2px;
+    left: 50%;
+    margin-left: -34px;
+
+    background-color: $second_color;
+  }
+  .text_block_pink:before{
+    top: 0;
+  }
+  .text_block_pink:after{
+    bottom: 0;
   }
 }
 

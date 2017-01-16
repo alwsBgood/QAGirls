@@ -1,5 +1,17 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "Gilroy-Light";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/Roboto.woff2") format("woff2"), url("fonts/Roboto.woff") format("woff"); }
+  src: url("fonts/Gilroy-Light.woff2") format("woff2"), url("fonts/Gilroy-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Gilroy-Extrabold.woff2") format("woff2"), url("fonts/Gilroy-Extrabold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Corinthia";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Corinthia.woff2") format("woff2"), url("fonts/Corinthia.woff") format("woff"); }

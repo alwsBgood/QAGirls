@@ -5,7 +5,7 @@ body {
 	position: relative;
 	font: 18px/24px $main_font;
 	color: $main_text_color;
-	background-color: #fff;
+	background-color: #f9f8f8;
 }
 
 body.unscroll{
@@ -92,6 +92,7 @@ button, a{
     height: 0;
     width: 0;
 }
+
 .bar-long {
 	height: 5px;
 	width: 0;
@@ -103,19 +104,162 @@ button, a{
 }
 
 .btn{
-	width:300px;
-	height: 60px;
-	background-color: $main_color;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 50px;
+  box-shadow: 0 12px 32px rgba(255, 53, 124, 0.47);
+  border-radius: 24px;
+  background-color: $second_color;
+  background-image: linear-gradient(to top, #4dd0e4 0%, #6fecff 100%);
 
-	color: #000;
-	font: 20px $main_font;
-	text-transform: uppercase;
+	color: #fff;
+	font: 18px $bold_font;
+  transition: all .3s;
+
+  span{
+    position: relative;
+    z-index: 10;
+  }
 }
 
+.btn:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 24px;
+  background-image: linear-gradient(to top, #e6155e 0%, #ff357c 100%);
+  transition: opacity .3s;
+}
+
+.btn:hover:before{opacity: 0;}
+
 .btn:hover{
-	background-color: $second_color;
+	background-color: $main_color;
+  box-shadow: 0 12px 32px rgba(46, 227, 255, 0.47);
 }
 
 .btn:active{
-	background-color: #edcc00;
+  color: #0d6a78;
+  box-shadow: 0 12px 32px rgba(46, 227, 255, 0.47);
+  border-radius: 24px;
+  background-color: #30a0b1;
+  background-image: linear-gradient(to top, #248998 0%, #3eb9cc 100%);
+}
+
+h2{
+  color: #000000;
+  font: 48px/44px $bold_font;
+  padding-bottom: 25px;
+}
+
+.title{
+  color: #000000;
+  font: 22px/24px $bold_font;
+}
+.block_title, .title_block{
+  color: #000000;
+  font: 32px/36px $bold_font;
+  padding-bottom: 15px;
+}
+.italic{font-family: $italic_font;}
+
+.pink{color: $second_color;}
+.blue{color: $main_color;}
+.black{color: #000;}
+
+.b163{background: url(../img/underlines/163-b.png) left bottom no-repeat;}
+.b336{background: url(../img/underlines/336-b.png) left bottom no-repeat;}
+.b361{background: url(../img/underlines/361-b.png) left bottom no-repeat;}
+.b75{background: url(../img/underlines/75-b.png) left bottom no-repeat;}
+.p286{background: url(../img/underlines/286-p.png) left bottom no-repeat;}
+.p336{background: url(../img/underlines/336-p.png) left bottom no-repeat;}
+.p372{background: url(../img/underlines/372-p.png) left bottom no-repeat;}
+.w286{background: url(../img/underlines/286-w.png) left bottom no-repeat;}
+
+#sec_01{
+  padding: 25px 0 200px;
+  background: url(../img/sec_01-bg.png) top center no-repeat;
+  .text_block{
+    position: relative;
+    margin-top: 230px;
+    .bold_text{
+      position: absolute;
+      top: -5px;
+      left: 235px;
+
+      color: #056676;
+      font: 24px $bold_font;
+    }
+    .italic{
+      position: absolute;
+      top: -27px;
+      right: 74px;
+
+      color: #fea6b2;
+      font-size: 50px;
+    }
+  }
+  h1{
+    color: #ffffff;
+    font: 100px/102px $bold_font;
+    margin-left: 95px;
+    span{
+      position: relative;
+      display: inline-block;
+      margin-left: 175px;
+      z-index: 2;
+    }
+    span:before{
+      position: absolute;
+      content: '';
+      width: 705px;
+      height: 723px;
+      left: -275px;
+      top: -229px;
+      background: url(../img/sec_01--top_layer.png) center no-repeat;
+      z-index: -1;
+    }
+  }
+  .btn{
+    margin: 235px auto 0;
+    z-index: 10;
+  }
+}
+
+.top{
+  .call{
+    float: right;
+    margin-top: 5px;
+    .tel{
+      color: #000;
+      font: 18px/50px $bold_font;
+      display: inline-block;
+      transition: color .3s;
+    }
+    .tel:hover{color:#EA8998}
+    .call_btn{
+      width: 200px;
+      height: 40px;
+      float: right;
+      margin-left: 30px;
+      border-radius: 19px;
+      background-color: #ffffff;
+      transition: background-color .3s, color .3s;
+
+      color: #066372;
+      font: 18px $bold_font;
+    }
+    .call_btn:hover{
+      color: #fff;
+      background-color: #fd327a;
+    }
+    .call_btn:active{
+      color: #b20d47;
+      background-color: #e81861;
+    }
+  }
 }
