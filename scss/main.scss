@@ -150,6 +150,10 @@
     top: 0px;
     background: url(../img/sec_04-arr.png) center no-repeat;
   }
+  .item_pink{
+    position: relative;
+    z-index: 10;
+  }
   .second_column{
     img{
       float: right;margin-top: 65px;
@@ -208,6 +212,8 @@
     line-height: 50px;
     margin-top: -10px;
     margin-bottom: 85px;
+    position: relative;
+    z-index: 10;
   }
   .first_column{
     .item_pink{
@@ -285,7 +291,9 @@
     }
   }
   .item_text{
+    transition: all 0.6s;
     position: relative;
+    max-height: 28px;
     color: #000000;
     font-family: $bold_font;
     font-size: 22px;
@@ -297,14 +305,77 @@
     content: '';
     width: 16px;
     height: 16px;
-    right: 30px;
+    right: 50px;
     top: 8px;
     background: url(../img/plus.png) center no-repeat;
+    transition: .6s;
   }
   .item+.item{margin-top: 42px;}
   .final{
     font-size: 48px;
     margin-top: 60px;
+  }
+  .item_hidden_info{
+    display: none;
+    padding: 30px 30px 25px;
+    background: #fff;
+    font-size: 16px;
+    .part{
+      margin: 15px 0 10px;
+       span {font-size: 36px;}
+    }
+    .pink{margin: 10px 0;}
+    .main_list{
+      opacity: 0;
+      li{
+        position: relative;
+        margin-left: 25px;
+      }
+      li:before{
+          position: absolute;
+          content: '';
+          width: 20px;
+          height: 15px;
+          left: -25px;
+          top: 3px;
+          background: url(../img/list_arow.png) center no-repeat;
+        }
+      li+li{margin-top: 10px;}
+      ul{
+        margin-top: 10px;
+        li{
+          margin-left: 35px;
+          span{color: #000;}
+        }
+        li:before{
+          position: absolute;
+          content: '';
+          left: -20px;
+          top: 0px;
+          color: #ecebeb;
+          font-family: $italic_font;
+          font-size: 50px;
+          background: none;
+        }
+        li:nth-child(1):before{content: "a"};
+        li:nth-child(2):before{content: "b"};
+        li:nth-child(3):before{content: "c"};
+        li:nth-child(4):before{content: "d"};
+        li:nth-child(5):before{content: "e"};
+        li:nth-child(6):before{content: "f"};
+        li:nth-child(7):before{content: "g"};
+      }
+    }
+  }
+  .item{cursor:pointer;}
+  .item.open{
+    .item_hidden_info{padding-top: 90px;}
+    .item_text{transform: translate(30px, 50px);}
+    .main_list{opacity: 1;}
+    .item_text:before{transform: rotate(225deg) !important;}
+  }
+  .item:hover{
+    .item_text:before{transform: rotate(-270deg)}
   }
 }
 

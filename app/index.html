@@ -87,7 +87,7 @@
                 <div class="text_block">
                     <p class="bold_text">Онлайн-курс </p>
                     <p class="italic">Не подарили, а заработала!</p>
-                    <h1> QA для <span>девушек</span></h1>
+                    <h1 > QA для <span>девушек</span></h1>
                     <a class="md-trigger flex btn" data-modal="modal_callback"><span>Начать обучение</span></a>
                 </div>
             </div>
@@ -101,18 +101,20 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2 class="w286">Ты смотришь <br /> на идеальные туфли...</h2>
-                <img src="img/sec_02-img-1.png" alt="Девушка в восторге">
+                <h2 data-offset="-10" class="w286">Ты смотришь <br /> на идеальные туфли...</h2>
+                <img data-offset="10" src="img/sec_02-img-1.png" alt="Девушка в восторге">
             </div>
-            <div class="col-6 tr">
-                <img src="img/sec_02-img-2.png" alt="Идеальные туфли">
-                <p class="title p372 title_block">...Туфли смотрят на тебя.</p>
-                <div class="text_block">
-                    <ul class="italic">
-                        <li>Искра!</li>
-                        <li>Буря.!</li>
-                        <li>Безумие!</li>
-                    </ul>
+            <div  class="col-6 tr">
+                <div class="wrap">
+                    <img data-offset="-10" src="img/sec_02-img-2.png" alt="Идеальные туфли">
+                    <p data-offset="20" class="title p372 title_block">...Туфли смотрят на тебя.</p>
+                    <div  class="text_block">
+                        <ul data-offset="-8" class="italic">
+                            <li>Искра!</li>
+                            <li>Буря.!</li>
+                            <li>Безумие!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,7 +137,7 @@
                 </ul>
             </div>
             <div class="col-5">
-                <img src="img/sec_02-img-3.png" alt="Грустная девушка без работы">
+                <img data-offset="35" src="img/sec_02-img-3.png" alt="Грустная девушка без работы">
             </div>
         </div>
         <div class="row">
@@ -215,18 +217,18 @@
                     <p class="title">QA-инженер</p>
                     <p class="text">IT-специалист, который ищет ошибки <br /> в программном обеспечении: мобильных <br /> приложениях, играх, на сайтах и т.д. <br /> Ты наверняка слышала сленговое название этой <br /> профессии — тестировщик. </p>
                 </div>
-                <img src="img/sec_04-img-1.png" alt="Ошибки в коде" class="left_img">
+                <img data-offset="15" src="img/sec_04-img-1.png" alt="Ошибки в коде" class="left_img">
             </div>
             <div class="col-6 second_column clearfix">
                 <div class="wrap">
-                    <img src="img/sec_04-img-2.png" alt="Работа с кодом">
-                    <div class="item_pink">
+                    <img data-offset="-25" src="img/sec_04-img-2.png" alt="Работа с кодом">
+                    <div data-offset="15" class="item_pink">
                         <p class="block_title pink b163">Этот специалист <br /> проверяет ПО</p>
                         <p class="text">Cогласно заранее составленным сценариям <br /> — например, для интернет-магазина это может быть путь “загрузить главную страницу\ найти товар\добавить его в корзину\оформить заказ”.</p>
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="item_pink">
+                <div class="item_pink" data-offset="-12">
                     <p class="block_title pink b163">Задача <br /> тестировщика</p>
                     <p class="text">Найти и устранить ошибки (баги). Именно благодаря <br /> QA-специалисту мы пользуемся логичными, <br /> понятными и отлаженными приложениями.</p>
                 </div>
@@ -266,18 +268,18 @@
     <div class="container">
         <div class="row">
             <div class="col-6 first_column">
-                <img src="img/sec_06-img-1.png" alt="Running time">
-                <div class="item_pink">
+                <img data-offset="-18" src="img/sec_06-img-1.png" alt="Running time">
+                <div data-offset="15" class="item_pink">
                     <p class="block_title pink b163">Обучение <br /> в этой профессии <br /> сравнительно быстро</p>
                     <p class="text">А скилл всегда востребован. <br /> Такой специалист может легко сменить <br /> профиль в сторону менеджмента, <br /> программирования, аналитики.</p>
                 </div>
             </div>
             <div class="col-6 second_column">
-                <h2 class="p286">Кстати: навык QA <br /> нужен не только тем, <br /> кто хочет стать  <br /> тестировщиком.</h2>
+                <h2 data-offset=-14" class="p286">Кстати: навык QA <br /> нужен не только тем, <br /> кто хочет стать  <br /> тестировщиком.</h2>
                 <div class="tr">
-                    <img src="img/sec_06-img-2.png" alt="Девушка работает в кафе">
+                    <img data-offset="18" src="img/sec_06-img-2.png" alt="Девушка работает в кафе">
                 </div>
-                <div class="item_pink">
+                <div data-offset="22" class="item_pink">
                     <p class="block_title pink b75">Поэтому QA </p>
                     <p class="text">Это самый быстрый способ <br /> построить карьеру в IT-сфере. </p>
                 </div>
@@ -318,6 +320,13 @@
                         <span class="time">2 часа</span>
                     </div>
                     <p class="item_text">Введение</p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>IT-специалисты и программный продукт</li>
+                            <li>IT-специальности и различия между ними</li>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -326,6 +335,38 @@
                         <span class="time">10 часов</span>
                     </div>
                     <p class="item_text">Типы и виды тестирования. <br /> Уровни тестирования. </p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Lesson 1 - White box, Grey box and Black Box testing</li>
+                            <ul>
+                                <li><span>Self-study</span> - White box, Grey box and Black Box testing #1</li>
+                                <li><span>Self-study</span> - White box, Grey box and Black Box testing #2</li>
+                            </ul>
+                            <li>Lesson 2 - Software Testing Principles</li>
+                            <ul>
+                                <li><span>Self-study</span> - Software Testing Principles</li>
+                            </ul>
+                            <li>Lesson 3 - Software Testing Levels</li>
+                            <ul>
+                                <li><span>Self-study</span> - Software Testing Levels</li>
+                            </ul>
+                            <li>Lesson 4 - Functional Testing</li>
+                            <li>Lesson 5 - Non-functional testing</li>
+                            <ul>
+                                <li><span>Self-study</span> - Non-functional testing</li>
+                            </ul>
+                            <li>Lesson 6 - Introduction to testing on different platforms</li>
+                            <ul>
+                                <li><span>Self-study</span> - Introduction to testing on different platforms</li>
+                            </ul>
+                            <li>Lesson 7 - Introduction to Test Automation</li>
+                            <ul>
+                                <li><span>Self-study</span> - GUI tests automation</li>
+                                <li><span>Self-study</span> - Pros and Cons of Test Automation</li>
+                            </ul>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -334,6 +375,27 @@
                         <span class="time">30 часов</span>
                     </div>
                     <p class="item_text"> Web-тестирование</p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Lesson 1 - Web-based products architecture</li>
+                            <ul>
+                                <li><span>Self-study</span> - The architecture of web-based products</li>
+                            </ul><li>Lesson 2 - Web-based products types</li>
+                            <ul>
+                                <li><span>Self-study</span> - Kinds and types of Web sites</li>
+                            </ul><li>Lesson 3 - Basic approaches to test a web-based products</li>
+                            <ul>
+                                <li><span>Self-study</span> - Basic approaches and types of testing</li>
+                            </ul><li>Lesson 4 - Tools and browser plugins for testing web-based products</li>
+                            <ul>
+                                <li><span>Self-study</span> -  Tools and browser plugins for testing</li>
+                            </ul><li>Lesson 5 - Web-based products testing specifics</li>
+                            <ul>
+                                <li><span>Self-study</span> -  Web application testing specifics</li>
+                            </ul>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -342,6 +404,19 @@
                         <span class="time">6 часов</span>
                     </div>
                     <p class="item_text">Команда и роли</p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                           <li>Lesson 1 - Introduction</li>
+                           <li>Lesson 2 - Roles and their  responsibilities</li>
+                           <li>Lesson 3 - Collaboration with  different roles</li>
+                           <ul>
+                               <li><span>Self-study</span> - Breaking Down  Software Development Roles</li>
+                               <li><span>Self-study</span> - Driving Team  Effectiveness</li>
+                               <li><span>Self-study</span> - Teamwork Handbook</li>
+                           </ul>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
             </div>
             <div class="col-4">
@@ -352,6 +427,14 @@
                         <span class="time">4 часа</span>
                     </div>
                     <p class="item_text">Почему QA и какая меня <br /> ждет карьера? </p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Причины возникновения QA-специальности, её суть и цели</li>
+                            <li>Почему тестирование хороший старт в IT</li>
+                            <li>Варианты карьерного роста и перспективы</li>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -360,6 +443,38 @@
                         <span class="time">10+10+6= 26 часов</span>
                     </div>
                     <p class="item_text">Основные QA артефакты</p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Lesson 0 - QA Artifacts Introduction</li>
+                            <p class="part"><span class="italic pink">Part1</span> - Test Plan:</p>
+                            <li>Lesson 1 - Test Plan</li>
+                            <ul>
+                                <li><span>Self-study</span> - Materials for QA  Artifacts Test Plan #1</li>
+                                <li><span>Self-study</span> - Materials for QA  Artifacts Test Plan #2</li>
+                                <li><span>Self-study</span> - Materials for QA  Artifacts Test Plan #3</li>
+                            </ul>
+                            <li>Test Plan Template</li>
+                            <p class="pink">Практическое ДЗ #1</p>
+                            <p class="part"><span class="italic blue">Part2</span> - Test Design; Test Case, Use  Case & Test scenario</p>
+                            <li>Lesson 2 - Test Design Techniques</li>
+                            <ul>
+                                <li><span>Self-study</span> - Materials for Test  Design Techniques</li>
+                            </ul><li>Lesson 3 - Case, Use case & Test  Scenario #1</li>
+                            <li>Lesson 4 - Case, Use case & Test  Scenario #2</li>
+                            <ul>
+                                <li><span>Self-study</span> - Materials for Use Cases</li>
+                                <li><span>Self-study</span> - Test Cases: Video</li>
+                                <li><span>Self-study</span> - Common Tests</li>
+                            </ul>
+                            <p class="pink">Практическое ДЗ #2</p>
+                            <p class="part"><span class="italic blue">Part3</span> -  QA Checklist & QA Report</p>
+                            <li>Lesson 5 - QA Checklist Video</li>
+                            <ul>
+                                <li><span>Self-study</span> - Materials for QA  Checklist Hints & Tips</li>
+                            </ul>
+                            <p class="pink">Практическое ДЗ #3</p>
+                        </ul>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -368,6 +483,20 @@
                         <span class="time">30 часов</span>
                     </div>
                     <p class="item_text">Mobile-тестирование</p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Lesson 1 - Виды и типы мобильных  продуктов</li>
+                            <li>Lesson 2 - Архитектура мобильных  продуктов</li>
+                            <li>Lesson 3 - Основные отличия  и особенности тестирования  мобильных продуктов</li>
+                            <li>Lesson 4 - Основные подходы  к тестированию</li>
+                            <li>Lesson 5 - Инструменты  тестирования iOS</li>
+                            <li>Lesson 6 - Инструменты  тестирования Android</li>
+                            <li>Lesson 7 - Cross-platform  инструменты</li>
+                            <li>Lesson 8 - Приоритезация  и планирование работы</li>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание №1</p>
+                        <p class="pink">Практическое домашнее задание №2</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -376,6 +505,29 @@
                         <span class="time">8 часов</span>
                     </div>
                     <p class="item_text">Jira </p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Introduction:</li>
+                            <ul>
+                                <li><span>Self-study</span> - Meet Jira. Part 1</li>
+                                <li><span>Self-study</span> - Meet Jira. Part 2</li>
+                                <li><span>Self-study</span> - Meet Jira. Part 3</li>
+                                <li><span>Self-study</span> -  Jira Core. Part 1</li>
+                                <li><span>Self-study</span> -  Jira Core. Part 2</li>
+                            </ul>
+                            <li>Lesson 1 - Projects & Users</li>
+                            <li>Lesson 2 - Creating an Issue</li>
+                            <li>Lesson 3 - Workflows, statuses,  resolutions</li>
+                            <li>Lesson 4 - Basic Agile Tools &  Time Tracking</li>
+                            <li>Lesson 5 - Dashboard & Issue Filter</li>
+                            <li>Lesson 6 - Reports and QA Activities</li>
+                            <ul>
+                                <li><span>Self-study</span> - Introduction to Jira  & Agile Project Management</li>
+                                <li><span>Self-study</span> - Jira Workflow Best  Practices</li>
+                            </ul>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
             </div>
             <div class="col-4">
@@ -386,6 +538,14 @@
                         <span class="time">6 часов</span>
                     </div>
                     <p class="item_text">Процесс разработки <br /> программного обеспечения </p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Основы процесса разработки ПО</li>
+                            <li>Методологии разработки и цикл   разработки ПО в Scrum</li>
+                            <li>Понятие окружений  (environment-ов) и работы с ними</li>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -394,6 +554,23 @@
                         <span class="time">12 часов</span>
                     </div>
                     <p class="item_text">Ошибки (Bugs) <br /> </p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                           <li>Lesson 1 - Definition and reasons  bugs do exist</li>
+                           <li>Lesson 2 - Bug Life Cycle and the  Cost of Bug</li>
+                           <li>Lesson 3 - Bug Types and Categories</li>
+                           <li>Lesson 4 - Components of Bug.  Severity and Priority</li>
+                           <li>Lesson 5 - Tips and Tricks to find bugs</li>
+                           <li>Lesson 6 - How to write good Bug  reports</li>
+                           <ul>
+                            <li><span>Self-study</span> - Short review of Bug  Tracking systems</li>
+                            <li><span>Self-study</span> - Bug writing tutorial  from "SQA Days"</li>
+                            <li><span>Self-study</span> - Writing Effective Bug  Reports</li>
+                            <li><span>Self-study</span> - Useful information  and links"</li>
+                        </ul>
+                    </ul>
+                    <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -402,6 +579,20 @@
                         <span class="time">8 часов</span>
                     </div>
                     <p class="item_text">Требования и всё что <br /> с ними связано </p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Lesson 1 - Introduction to software  requirements</li>
+                            <li>Lesson 2 - Types of Requirements</li>
+                            <li>Lesson 3 - Requirements Lifecycle</li>
+                            <li>Lesson 4 - Exit & Acceptance Criteria</li>
+                            <li>Lesson 5 - Requirements Analysis</li>
+                            <ul>
+                                <li><span>Self-study</span> - Mindmaps</li>
+                                <li><span>Self-study</span> - Software  Requirements Overview</li>
+                            </ul>
+                        </ul>
+                        <p class="pink">Практическое домашнее задание</p>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="item_title clearfix">
@@ -410,6 +601,40 @@
                         <span class="time">12 часов</span>
                     </div>
                     <p class="item_text">Agile (Scrum)</p>
+                    <div class="item_hidden_info">
+                        <ul class="main_list">
+                            <li>Introduction:</li>
+                            <li><span>Self-study</span> - Scrum Framework</li>
+                            <li>Lesson 1: Agile Manifesto  & Introduction</li>
+                            <li>Lesson 2: Team Productivity Stages</li>
+                            <ul>
+                                <li><span>Self-study</span> - Coaching Scrum  Teams - Scrum Alliance</li>
+                                <li><span>Self-study</span> - Forming, Storming,  Norming, Performing and  Adjourning</li>
+                            </ul>
+                            <li>Lesson 3: Scrum Artifacts</li>
+                            <li>Lesson 4: Scrum Roles</li>
+                            <li>Lesson 5: Scrum Process</li>
+                            <ul>
+                             <li><span>Self-study</span> - Scrum PROCESS in ONE picture</li>
+                         </ul>
+                         <li>Lesson 6: Scrum Meetings</li>
+                         <ul>
+                             <li><span>Self-study</span> - Backlog Grooming: Who Should Attend and How  to Maximize Value</li>
+                             <li><span>Self-study</span> - Product Backlog  Refinement (Grooming)</li>
+                             <li><span>Self-study</span> - Sprint Planning  Meeting</li>
+                             <li><span>Self-study</span> - Daily Scrum Meeting</li>
+                             <li><span>Self-study</span> - Sprint Review Meeting</li>
+                             <li><span>Self-study</span> - Sprint Retrospective</li>
+                             <li><span>Self-study</span> - Scrum in ONE picture</li>
+                         </ul>
+                         <li>Lesson 7: QA in Scrum</li>
+                         <ul>
+                            <li><span>Self-study</span> - Role of "Quality  Assurance Engineer" in Scrum/Agile</li>
+                            <li><span>Self-study</span> - QA Role in Scrum</li>
+                        </ul>
+                    </ul>
+                    <p class="pink">Практическое домашнее задание</p>
+                </div>
                 </div>
             </div>
             <div class="col-12 tc">
@@ -425,7 +650,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6 tc">
-                <img src="img/sec_08-img.png" alt="Рабочее место">
+                <img data-offset="15" src="img/sec_08-img.png" alt="Рабочее место">
             </div>
             <div class="col-6">
                 <h2 class="p262">Кто обучает</h2>
@@ -441,16 +666,16 @@
 <section id="sec_09">
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <h2 class="b361">Мы уверены в том, <br /> что наш курс хорош</h2>
+            <div  class="col-6">
+                <h2  class="b361">Мы уверены в том, <br /> что наш курс хорош</h2>
                 <div class="item">
                     <p class="text">Поэтому, если у тебя есть сомнения...</p>
                     <p class="title">Посмотри бесплатные уроки. <br /> Прямо сейчас</p>
                 </div>
-                <img src="img/sec_09-img-1.png" alt="Видеоурок">
+                <img data-offset="20" src="img/sec_09-img-1.png" alt="Видеоурок">
             </div>
-            <div class="col-6 tc">
-            <img src="img/sec_09-img-2.png" alt="Доступ к урокам">
+            <div data-offset="-20" class="col-6 tc">
+            <img data-offset="-20" src="img/sec_09-img-2.png" alt="Доступ к урокам">
                 <div class="center_block">
                     <p class="block_title b163">Жми кнопку</p>
                     <p class="italic">И получи доступ <br /> к <span class="blue">5</span> бесплатным урокам.</p>
@@ -468,7 +693,7 @@
         <div class="row">
             <div class="col-4">
                 <h2 class="p336">Онлайн <br /> -обучение <br /> — это выгодно </h2>
-                <img src="img/sec_10-img-1.png" alt="Время идет">
+                <img data-offset="20" src="img/sec_10-img-1.png" alt="Время идет">
             </div>
             <div class="col-4">
                 <div class="item">
@@ -499,19 +724,19 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2 class="b361">Согласно <br /> статистике DOU</h2>
-                <div class="item">
+                <h2  data-offset="10" class="b361">Согласно <br /> статистике DOU</h2>
+                <div  data-offset="-10" class="item">
                     <p class="pink block_title">Зарплата Junior QA <br /> в Киеве составляет $500. </p>
                     <p class="text">При этом QA Engineer зарабатывает <br /> около $1250, а Senior QA — $2400.</p>
                 </div>
             </div>
             <div class="col-6 tr">
-                <img src="img/sec_11-img-1.png" alt="Счастливая девушка">
+                <img  data-offset="-10" src="img/sec_11-img-1.png" alt="Счастливая девушка">
             </div>
         </div>
         <div class="row">
             <div class="col-6 tr">
-                <img src="img/sec_11-img-2.png" alt="Модные идеальные туфли">
+                <img data-offset="20" src="img/sec_11-img-2.png" alt="Модные идеальные туфли">
             </div>
             <div class="col-6 tc">
                 <div class="center_block">
@@ -542,12 +767,12 @@
                 </div>
             </div>
             <div class="col-6 tr">
-                <img src="img/sec_12-img-1.png" alt="Девушка">
+                <img  data-offset="-20" src="img/sec_12-img-1.png" alt="Девушка">
             </div>
         </div>
         <div class="row">
             <div class="col-6">
-                <img src="img/sec_12-img-2.png" alt="Целеустремленная девушка за работой">
+                <img   data-offset="20" src="img/sec_12-img-2.png" alt="Целеустремленная девушка за работой">
             </div>
             <div class="col-6 tc">
                 <div class="center_block">
@@ -578,7 +803,7 @@
                </div>
            </div>
            <div class="col-6 tc">
-               <img src="img/sec_13-img.png" alt="Деньги">
+               <img  data-offset="30" src="img/sec_13-img.png" alt="Деньги">
                <div class="center_block">
                    <p class="block_title b163">Не нужно рисковать.</p>
                    <p class="italic">Просто начни учиться.</p>
@@ -595,13 +820,13 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <img class="first_img" src="img/sec_14-img-1.png" alt="Девушка работает">
-                <div class="item item_first">
-                    <p class="block_title pink b75">Уверенный <br /> пользователь ПК </p>
+                <img   data-offset="20" class="first_img" src="img/sec_14-img-1.png" alt="Девушка работает">
+                <div data-offset="8" class="item item_first">
+                    <p   class="block_title pink b75">Уверенный <br /> пользователь ПК </p>
                     <p class="text">Эту странную фразу часто можно увидеть <br /> в описании вакансии. Звучит не очень, но смысл правильный — ты должна уметь работать <br /> с компьютером. Если ты не знаешь, как <br /> зарегистрировать почту, создать Google Drive или переустановить Windows — сначала <br /> придется овладеть базовыми навыками.</p>
                 </div>
                <div class="tr">
-                    <img class="third_img" src="img/sec_14-img-3.png" alt="Девушка работает">
+                    <img  data-offset="25"  class="third_img" src="img/sec_14-img-3.png" alt="Девушка работает">
                </div>
             </div>
             <div class="col-6">
@@ -616,13 +841,13 @@
                         <p class="text">Работу с теми, кто действительно хочет и сможет работать в IT. Именно поэтому мы предупреждаем: курс подойдет не всем. </p>
                     </li>
                 </ul>
-                <img class="second_img" src="img/sec_14-img-2.png" alt="Девушка работает">
+                <img  data-offset="-30" class="second_img" src="img/sec_14-img-2.png" alt="Девушка работает">
                 <div class="item item_second">
                     <p class="block_title pink b163">Лондон <br /> из зе кепитал <br /> оф грейт британ </p>
                     <p class="text">Важен уровень английского: без него ты не сможешь изучать актуальные материалы. общаться <br /> с коллегами и заказчиками из других стран. Если твои познания ограничены школьными, а уровень ниже Pre-Intermediate — подтяни английский! </p>
                 </div>
 
-                <div class="item item_third">
+                <div data-offset="-15" class="item item_third">
                     <p class="block_title pink b163">Мотивация — наше все </p>
                     <p class="text">Мы уже признались, что не знаем никаких секретов. <br /> Все, что у нас есть: хорошо продуманная <br /> программа, агрегированная информация, умело <br /> составленные практические задания <br /> и профессиональные менторы, которые будут тебя корректировать. Это крутой курс, да. Но главное — <br /> чтобы ты сама хотела достичь цели. </p>
                 </div>
