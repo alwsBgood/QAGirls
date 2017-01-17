@@ -904,3 +904,79 @@ input::-moz-placeholder {
 input:-ms-input-placeholder {
   color: #8a8a8a;
   font: 18px/24px "Gilroy-Light", sans-serif; }
+
+@media (min-width: 768px) {
+  #sec_02 ul br {
+    display: none; }
+  #sec_03 .item br {
+    display: none; }
+  #sec_03 .italic {
+    width: 450px; }
+  #sec_02 img, #sec_03 img, #sec_04 img, #sec_05 img,
+  #sec_06 img, #sec_10 img, #sec_11 img,
+  #sec_12 img, #sec_13 img, #sec_14 img {
+    width: 100%; }
+  #sec_07 .item_title .time {
+    margin-right: 0; }
+  #sec_07 .item_text {
+    padding-right: 20px;
+    max-height: 100%;
+    margin-bottom: 20px; }
+    #sec_07 .item_text br {
+      display: none; }
+  #sec_07 .item_text:before {
+    right: 0; }
+  #sec_07 .item.open .item_hidden_info {
+    padding-top: 20px; }
+  #sec_07 .item.open .item_text {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  #sec_09 .img_1 {
+    width: 100%; }
+  #sec_15 form {
+    -webkit-box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.3); }
+  #sec_15 .top {
+    margin-top: 145px;
+    margin-bottom: 20px; } }
+
+@media (min-width: 992px) {
+  #sec_02 ul br {
+    display: none; }
+  #sec_03 .item br {
+    display: none; }
+  #sec_03 .italic {
+    width: 450px; }
+  #sec_02 img, #sec_03 img, #sec_04 img, #sec_05 img,
+  #sec_06 img, #sec_10 img, #sec_11 img,
+  #sec_12 img, #sec_13 img, #sec_14 img {
+    width: 100%; }
+  #sec_07 .item_title .time {
+    margin-right: 0; }
+  #sec_07 .item_text {
+    padding-right: 20px;
+    max-height: 100%;
+    margin-bottom: 20px; }
+    #sec_07 .item_text br {
+      display: none; }
+  #sec_07 .item_text:before {
+    right: 0; }
+  #sec_07 .item.open .item_hidden_info {
+    padding-top: 20px; }
+  #sec_07 .item.open .item_text {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  #sec_09 .img_1 {
+    width: 100%; }
+  #sec_15 form {
+    -webkit-box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.3); }
+  #sec_15 .top {
+    margin-top: 145px;
+    margin-bottom: 20px; } }
+
+@media screen and (max-height: 700px) {
+  .md_large .md_content {
+    max-height: 320px; } }

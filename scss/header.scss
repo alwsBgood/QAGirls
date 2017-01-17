@@ -263,3 +263,28 @@ h2{
     }
   }
 }
+
+
+// 599
+@include for-size(phone-only) {}
+// 600 -899
+@include for-size(tablet-portait-only) {}
+// 900 - 1199
+@include for-size(tablet-landscape-only) {
+  #sec_01{
+    h1{
+      margin-left: 0;
+      span{
+        margin-left: 164px;
+      }
+    }
+    .text_block{
+      .bold_text{
+        left: 150px;
+      }
+      .italic{
+        right: 0;
+      }
+    }
+  }
+}

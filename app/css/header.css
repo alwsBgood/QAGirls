@@ -262,3 +262,13 @@ h2 {
   .top .call .call_btn:active {
     color: #b20d47;
     background-color: #e81861; }
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #sec_01 h1 {
+    margin-left: 0; }
+    #sec_01 h1 span {
+      margin-left: 164px; }
+  #sec_01 .text_block .bold_text {
+    left: 150px; }
+  #sec_01 .text_block .italic {
+    right: 0; } }
