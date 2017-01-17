@@ -266,6 +266,8 @@
       margin: 15px 0 10px; }
       #sec_07 .item_hidden_info .part span {
         font-size: 36px; }
+    #sec_07 .item_hidden_info .part:before {
+      display: none; }
     #sec_07 .item_hidden_info .pink {
       margin: 10px 0; }
     #sec_07 .item_hidden_info .main_list {
@@ -283,35 +285,33 @@
         background: url(../img/list_arow.png) center no-repeat; }
       #sec_07 .item_hidden_info .main_list li + li {
         margin-top: 10px; }
-      #sec_07 .item_hidden_info .main_list ul {
+      #sec_07 .item_hidden_info .main_list li li {
         margin-top: 10px; }
-        #sec_07 .item_hidden_info .main_list ul li {
-          margin-left: 35px; }
-          #sec_07 .item_hidden_info .main_list ul li span {
-            color: #000; }
-        #sec_07 .item_hidden_info .main_list ul li:before {
-          position: absolute;
-          content: '';
-          left: -20px;
-          top: 0px;
-          color: #ecebeb;
-          font-family: "Corinthia", sans-serif;
-          font-size: 50px;
-          background: none; }
-        #sec_07 .item_hidden_info .main_list ul li:nth-child(1):before {
-          content: "a"; }
-        #sec_07 .item_hidden_info .main_list ul li:nth-child(2):before {
-          content: "b"; }
-        #sec_07 .item_hidden_info .main_list ul li:nth-child(3):before {
-          content: "c"; }
-        #sec_07 .item_hidden_info .main_list ul li:nth-child(4):before {
-          content: "d"; }
-        #sec_07 .item_hidden_info .main_list ul li:nth-child(5):before {
-          content: "e"; }
-        #sec_07 .item_hidden_info .main_list ul li:nth-child(6):before {
-          content: "f"; }
-        #sec_07 .item_hidden_info .main_list ul li:nth-child(7):before {
-          content: "g"; }
+        #sec_07 .item_hidden_info .main_list li li span {
+          color: #000; }
+      #sec_07 .item_hidden_info .main_list li li:before {
+        position: absolute;
+        content: '';
+        left: -20px;
+        top: 0px;
+        color: #ecebeb;
+        font-family: "Corinthia", sans-serif;
+        font-size: 50px;
+        background: none; }
+      #sec_07 .item_hidden_info .main_list li li:nth-child(1):before {
+        content: "a"; }
+      #sec_07 .item_hidden_info .main_list li li:nth-child(2):before {
+        content: "b"; }
+      #sec_07 .item_hidden_info .main_list li li:nth-child(3):before {
+        content: "c"; }
+      #sec_07 .item_hidden_info .main_list li li:nth-child(4):before {
+        content: "d"; }
+      #sec_07 .item_hidden_info .main_list li li:nth-child(5):before {
+        content: "e"; }
+      #sec_07 .item_hidden_info .main_list li li:nth-child(6):before {
+        content: "f"; }
+      #sec_07 .item_hidden_info .main_list li li:nth-child(7):before {
+        content: "g"; }
   #sec_07 .item {
     cursor: pointer; }
   #sec_07 .item.open .item_hidden_info {
