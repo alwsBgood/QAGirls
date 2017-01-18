@@ -1,16 +1,13 @@
 <?php
-/*
 // Параметры для подключения
-$db_host = "localhost";
+/*$db_host = "localhost";
 $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
-// Параметры для подключения
-$db_host = "allinsol.mysql.ukraine.com.ua";
-$db_user = "allinsol_reg"; // Логин БД
-$db_password = "82kghcbl"; // Пароль БД
-$database = "allinsol_reg"; // БД
-
+ $db_host = "qagirl.mysql.ukraine.com.ua";
+$db_user = "qagirl_db"; // Логин БД
+$db_password = "CS3H7lta"; // Пароль БД
+$database = "qagirl_db"; // БД
 
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
@@ -59,14 +56,14 @@ function GetClearPhoneNumber($number) {
   $number = str_replace('+', '', $number);
   return $number;
 }
-$name = getVar('entry_648859501');
-$phone = getVar('entry_1805884529');
-$email = getVar('entry_1502780938');
+$name = getVar('name');
+$phone = getVar('custom_tel');
+$email = getVar('email');
 
 if (empty($name) && empty($phone) && empty($email)) {
-  $name = getVar('entry_843517337');
-  $phone = getVar('entry_1442957012');
-  $email = getVar('entry_1852430429');
+  $name = getVar('name');
+  $phone = getVar('custom_tel');
+  $email = getVar('email');
 } else {
   $name = getVar('entry_648859501');
   $phone = getVar('entry_1805884529');
@@ -127,8 +124,8 @@ $fullName = explode(' ', $data['name'], 2);
 
 // Построение SQL-оператора
 if (empty($data['confirmation_phone'])) {
-  $query = "INSERT INTO 
-            `leads_bc`(
+  $query = "INSERT INTO
+            `leads`(
                       `first_name`,
                       `last_name`,
                       `email`,

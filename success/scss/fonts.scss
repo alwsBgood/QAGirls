@@ -1,0 +1,5 @@
+@import "bourbon";
+
+@include font-face("Gilroy-Light", "fonts/Gilroy-Light", $file-formats: woff woff2);
+@include font-face("Gilroy-Extrabold", "fonts/Gilroy-Extrabold", $file-formats: woff woff2);
+@include font-face("Corinthia", "fonts/Corinthia", $file-formats: woff woff2);

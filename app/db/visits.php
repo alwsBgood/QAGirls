@@ -1,26 +1,26 @@
 <?php
 // Параметры для подключения
-/*$db_host = "localhost"; 
+/*$db_host = "localhost";
 $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
- $db_host = "allinsol.mysql.ukraine.com.ua"; 
-$db_user = "allinsol_reg"; // Логин БД
-$db_password = "82kghcbl"; // Пароль БД
-$database = "allinsol_reg"; // БД
+ $db_host = "qagirl.mysql.ukraine.com.ua";
+$db_user = "qagirl_db"; // Логин БД
+$db_password = "CS3H7lta"; // Пароль БД
+$database = "qagirl_db"; // БД
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
- 
+
 // Выборка базы
 mysql_select_db($database, $db);
 
-mysql_query("SET NAMES 'utf8'"); 
+mysql_query("SET NAMES 'utf8'");
 mysql_query("SET CHARACTER SET 'utf8'");
 mysql_query("SET SESSION collation_connection = 'utf8_general_ci'");
 
 // Построение SQL-оператора
-  $query = "INSERT INTO 
-            `visits_bc`(
+  $query = "INSERT INTO
+            `visits`(
                       `date_visited`,
                       `time_visited`,
                       `page_url`,
@@ -38,7 +38,7 @@ mysql_query("SET SESSION collation_connection = 'utf8_general_ci'");
                       `utmcmd`,
                       `affiliate_id`,
                       `click_id`
-                    ) 
+                    )
             VALUES('".$data['date_visited']."',
                     '".$data['time_visited']."',
                     '".$data['page_url']."',

@@ -99,7 +99,7 @@
     }
   }
   #sec_15{
-    background-size: 135%;
+    background-image: url(../img/footer-bg-mob.png);
     background-position: bottom center;
     form{
       box-shadow: -9px 10px 20px rgba(0,0,0,.3);
@@ -109,9 +109,8 @@
         width: 100%;
       }
     }
-    .italic{color: $main_color;}
     .top{
-      margin-top: 265px;
+      margin-top: 45px;
       margin-bottom: -30px;
     }
   }
@@ -411,6 +410,12 @@
       margin: 25px auto 0;
     }
   }
+  div[id*='modal_politics']{
+    h2{padding-top: 70px;}
+    .btn_close_modal{
+      top: 20px;
+    }
+  }
 }
 
 @media (max-width: 530px) {
@@ -440,10 +445,13 @@
     }
   }
   #sec_15{
+    background-image: url(../img/footer-bg-mob.png);
     .top{
-      margin-top: 300px;
+      text-align: center;
+      margin-top: 140px;
       .logo{
-        display: none;
+        float: none;
+        margin-bottom: 10px;
       }
     }
   }

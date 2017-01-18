@@ -1,5 +1,4 @@
 @import url(../libs/niftymodal/component.css);
-@import url(../libs/slick/slick.min.css);
 #sec_02 {
   padding: 45px 0 100px; }
   #sec_02 h2 {
@@ -632,7 +631,7 @@ div[id*="modal_callback"] {
 div[id*="modal_politics"] {
   text-align: center; }
   div[id*="modal_politics"] h2 {
-    padding-top: 20px; }
+    padding-top: 50px; }
 
 .md_large {
   max-width: 100%;
@@ -982,7 +981,7 @@ input:-ms-input-placeholder {
   #sec_14 ul {
     margin-left: 60px; }
   #sec_15 {
-    background-size: 135%;
+    background-image: url(../img/footer-bg-mob.png);
     background-position: bottom center; }
     #sec_15 form {
       -webkit-box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.3);
@@ -991,10 +990,8 @@ input:-ms-input-placeholder {
       padding: 40px 50px; }
       #sec_15 form .btn {
         width: 100%; }
-    #sec_15 .italic {
-      color: #4dd0e4; }
     #sec_15 .top {
-      margin-top: 265px;
+      margin-top: 45px;
       margin-bottom: -30px; }
   footer .politics a {
     font-size: 13px; } }
@@ -1237,7 +1234,11 @@ input:-ms-input-placeholder {
     div[id*="modal_callback"] .field + .field {
       margin-top: 15px; }
     div[id*="modal_callback"] .btn {
-      margin: 25px auto 0; } }
+      margin: 25px auto 0; }
+  div[id*='modal_politics'] h2 {
+    padding-top: 70px; }
+  div[id*='modal_politics'] .btn_close_modal {
+    top: 20px; } }
 
 @media (max-width: 530px) {
   #sec_02, #sec_05, #sec_06,
@@ -1257,10 +1258,14 @@ input:-ms-input-placeholder {
     right: 0; }
   #sec_11 .item {
     margin-left: 0; }
-  #sec_15 .top {
-    margin-top: 300px; }
-    #sec_15 .top .logo {
-      display: none; } }
+  #sec_15 {
+    background-image: url(../img/footer-bg-mob.png); }
+    #sec_15 .top {
+      text-align: center;
+      margin-top: 140px; }
+      #sec_15 .top .logo {
+        float: none;
+        margin-bottom: 10px; } }
 
 @media (max-width: 410px) {
   #sec_15 .top {
