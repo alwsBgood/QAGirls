@@ -17,16 +17,51 @@
         margin-top: 0;
       }
     }
+    .img_3{
+      margin-top: 50px;
+    }
+    .img_2{
+      width: 80%;
+    }
+    .img_1{
+      width: 500px;
+    }
   }
   #sec_03{
+    overflow: hidden;
     .item br {display: none;}
     .center_block{
-      margin-top: 0;
+      margin-top: 50px;
+    }
+    .col-6 .col-12{
+      width: 750px;
+      .item{
+        width: 45%;
+        display: inline-block;
+      }
+      .italic{
+        width: 45%;
+        text-align: center;
+        float: right;
+        margin-right: 30px;
+      }
     }
   }
   #sec_05{
+    br{display: none;}
+    .mobile{display: block;}
+    h2{margin-left: -100%;}
+    .img_1{margin-top: 200px;}
+    img.right{
+      margin-top: 90px;
+    }
     .item{
-      margin-top: 240px;
+      margin-top: 50px;
+      margin-left: 0;
+    }
+  }
+  #sec_06{
+    .second_column  .item_pink{
       margin-left: 0;
     }
   }
@@ -134,6 +169,21 @@
   #sec_12, #sec_13, #sec_14{
     img{width: 100%;}
   }
+  #sec_05{
+    br{display: none;}
+    .mobile{display: block;}
+    h2{margin-left: -100%;}
+    .img_1{margin-top: 200px;}
+    img.right{
+      margin-top: 220px;
+    }
+    .item{margin-top: 50px}
+  }
+  #sec_06{
+    .second_column  .item_pink{
+      margin-left: 0;
+    }
+  }
   #sec_07{
     .item_title{
       .time{margin-right: 0;}
@@ -154,6 +204,10 @@
     .img_1{width: 100%;}
   }
   #sec_15{
+    h2{
+      font-size: 38px;
+      line-height: 38px;
+    }
     form{
       box-shadow: -9px 10px 20px rgba(0,0,0,.3);
     }
@@ -161,6 +215,7 @@
       margin-top: 185px;
       margin-bottom: 20px;
     }
+    .mobile{display: block;}
   }
 }
 
@@ -369,18 +424,16 @@
   }
   footer{
     text-align: center;
+    .col-9, .col-3{width: 100%;}
     .politics{
-      a{
-         font-size: 14px;
-         display: block;
-         text-align: center;
-       }
-     a+a{margin-left: 0 }
-    }
-    .logo_rezart{
-      display: inline-block;
       float: none;
-      margin-top: 20px;
+      text-align: center;
+      a{display: block;}
+      a+a{margin-left: 0;}
+    }
+    .footer-fire, .logo_rezart{
+      float: none;
+      margin: 15px 20px 10px;
     }
   }
   div[id*="modal_callback"]{

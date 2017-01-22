@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /ajax/
+Disallow: /php/
+Disallow: http://qagirl.pro/success/
+
+User-agent: Yandex
+Disallow: /ajax/
+Disallow: /php/
+Disallow: http://qagirl.pro/success/

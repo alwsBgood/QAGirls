@@ -182,6 +182,7 @@
 
 #sec_05{
   padding: 100px 0;
+  .mobile{display: none;}
   h2{
     margin-bottom: 25px;
   }
@@ -639,13 +640,14 @@
     margin-top: 245px;
     margin-bottom: 70px;
   }
+  .mobile{display: none;}
 }
 
 footer{
   padding: 15px 0 15px;
   background-color: #202020;
   .politics{
-    margin-top: 10px;
+    margin-top: 17px;
     a{
       color: #65666a;
       font-size: 14px;
@@ -655,11 +657,55 @@ footer{
   }
   .logo_rezart{
     margin-top: 5px;
+    margin-left: 25px;
+    width: 80px;
+    // margin-right: 20px;
     float: right;
-    img{width: 70px;}
+  }
+  .logo_wcf{
+    float: right;
+  }
+  .footer-fire:hover {
+      animation-name: fire;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: step-end;
+      animation-direction: normal;
+      opacity: 1;
+  }
+  @keyframes fire {
+    0% {
+      background-position: 0 center;
+    }
+    25% {
+      background-position: -46px center;
+    }
+    50% {
+      background-position: -84px center;
+    }
+    75% {
+      background-position: -128px center;
+    }
+    100% {
+      background-position: -160px center;
+    }
+  }
+  .footer-fire {
+      display: inline-block;
+      height: 45px;
+      width: 35px;
+      overflow: hidden;
+      background-image: url(../img/fire.svg);
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: 0 center;
+      padding: 0;
+      transition: 1s ease;
+      background-size: 200px;
+      float: right;
+      opacity: .5;
   }
 }
-
 //ALWAYS END
 @import "_sketches.scss";
 @import "../libs/niftymodal/component.css";;

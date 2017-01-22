@@ -61,6 +61,7 @@ $(function() {
     $(send_btn).each(function() {
       $(this).attr('disabled', true);
     });
+    // Отправка на почту
     $.ajax({
       type: 'POST',
       url: 'mail.php',
@@ -69,9 +70,11 @@ $(function() {
         setTimeout(function() {
           $("[name=send]").removeAttr("disabled");
         }, 1000);
-        console.log("step 1");
         $('div.md-show').removeClass('md-show');
-        console.log("step 2");
+        dataLayer.push({
+          'form_type': formType,
+          'event': "form_submit"
+        });
           // Отправка в базу данных
           $.ajax({
            type: 'POST',
@@ -89,11 +92,7 @@ $(function() {
         });
       },
       error: function(xhr, str) {
-        // dataLayer.push({
-        //   'form_type': formType,
-        //   'event': "form_submit"
-        // });
-        // yaCounter41024484.reachGoal(goal);
+        console.log("Erorr")
       }
     });
 
@@ -175,139 +174,94 @@ $('*').click(function() {
 
 // Paralax
 
-if(window.innerWidth > 1200) {
-  ! function(t) {
-      function e(r) {
-          if (n[r]) return n[r].exports;
-          var o = n[r] = {
-              exports: {},
-              id: r,
-              loaded: !1
-          };
-          return t[r].call(o.exports, o, o.exports, e), o.loaded = !0, o.exports
-      }
-      var n = {};
-      return e.m = t, e.c = n, e.p = "", e(0)
-  }([function(t, e, n) {
-      "use strict";
-      if (n(1), window.innerWidth > 1099) {
-          for (var r = "undefined" != typeof document ? document.createElement("p").style : {}, o = ["O", "ms", "Moz", "Webkit"], i = {}, a = function(t) {
-                  if (t = t.replace(/-([a-z])/g, function(t, e) {
-                          return e.toUpperCase()
-                      }), void 0 !== r[t]) return t;
-                  for (var e = t.charAt(0).toUpperCase() + t.slice(1), n = o.length; n--;) {
-                      var i = o[n] + e;
-                      if (void 0 !== r[i]) return i
-                  }
-                  return t
-              }, s = (function(t) {
-                  return t in i ? i[t] : i[t] = a(t)
-              }), u = {
-                  byMatcher: function(t, e, n) {
-                      void 0 === n && (n = {}); {
-                          if (t && t !== document) return e(t) ? t : this.byMatcher(t.parentNode, e, n);
-                          if (n.throwOnMiss) throw new Error("Expected to find parent node, but none was found.")
-                      }
-                  },
-                  byClassName: function(t, e, n) {
-                      return this.byMatcher(t, function(t) {
-                          return t.classList.contains(e)
-                      }, n)
-                  }
-              }, f = [], c = document.querySelectorAll("[data-offset]"), d = 0; d < c.length; d++) {
-              var l = c[d],
-                  m = l;
-              null != l.dataset.container && (m = u.byClassName(l, l.dataset.container)), l.style.willChange = "transform", f.push({
-                  element: l,
-                  transform: parseFloat(l.dataset.offset, 10),
-                  container: m,
-                  mouse: null != l.dataset.mouse
-              })
-          }
-          var p = 0,
-              h = 0,
-              w = function(t, e) {
-                  for (var n = window.innerHeight, r = window.innerWidth, o = 0; o < f.length; o++) {
-                      var i = f[o];
-                      if (i.mouse && e || !e) {
-                          var a = i.container.getBoundingClientRect();
-                          if (a.bottom > -n && a.top < 2 * n) {
-                              var u = 100 * h + a.top + a.height / 2,
-                                  c = (u - n / 2) / i.transform,
-                                  d = 0;
-                              if (i.mouse) {
-                                  var l = 100 * p + a.left + a.width / 2;
-                                  d = (l - r / 2) / i.transform
-                              }
-                              i.element.style[s("transform")] = "translate(" + d + "px, " + c + "px)"
-                          }
-                      }
-                  }
-                  if (t)
-                      for (var o = 0; o < f.length; o++) {
-                          var i = f[o],
-                              a = i.container.getBoundingClientRect(),
-                              m = a.top + a.height / 2,
-                              w = (m - n / 2) / i.transform;
-                          i.element.style[s("transform")] = "translate(0px, " + w + "px)"
-                      }
-              };
-          window.addEventListener("mousemove", function(t) {
-              p = t.clientX / window.innerWidth * 2 - 1, h = t.clientY / window.innerHeight * 2 - 1, requestAnimationFrame(function() {
-                  w(!1, !0)
-              })
-          }), w(!0), setTimeout(function() {
-              w()
-          }), window.addEventListener("scroll", function() {
-              w()
-          }), window.addEventListener("resize", function() {
-              w()
-          })
-      }
-  }, function(t, e) {}]);
-}
-
-// Perfect Pxel
-
-// $('body').each(function() {
-//   var body = $(this);
-//   var img_url = $(this).data('img');
-//   var img = new Image();
-//   img.src = img_url;
-//   img.onload = function(){
-//     var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-//     var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-//     body.append(ppbox);
-//     body.append(ppbtn);
-//   };
-// });
-// function myOff() {
-//   var ppbtntext = $('#ppbtn').text();
-//   if (ppbtntext == 'ON') {
-//     $('#ppbtn').text('OFF');
-//     $('#pp').css('display', 'none');
-//   } else {
-//     $('#ppbtn').text('ON');
-//     $('#pp')        .css({
-//       ' z-index' : '1000000',
-//       display: 'block'
-//     });
-
-//   }
+// if(window.innerWidth > 1200) {
+//   ! function(t) {
+//       function e(r) {
+//           if (n[r]) return n[r].exports;
+//           var o = n[r] = {
+//               exports: {},
+//               id: r,
+//               loaded: !1
+//           };
+//           return t[r].call(o.exports, o, o.exports, e), o.loaded = !0, o.exports
+//       }
+//       var n = {};
+//       return e.m = t, e.c = n, e.p = "", e(0)
+//   }([function(t, e, n) {
+//       "use strict";
+//       if (n(1), window.innerWidth > 1099) {
+//           for (var r = "undefined" != typeof document ? document.createElement("p").style : {}, o = ["O", "ms", "Moz", "Webkit"], i = {}, a = function(t) {
+//                   if (t = t.replace(/-([a-z])/g, function(t, e) {
+//                           return e.toUpperCase()
+//                       }), void 0 !== r[t]) return t;
+//                   for (var e = t.charAt(0).toUpperCase() + t.slice(1), n = o.length; n--;) {
+//                       var i = o[n] + e;
+//                       if (void 0 !== r[i]) return i
+//                   }
+//                   return t
+//               }, s = (function(t) {
+//                   return t in i ? i[t] : i[t] = a(t)
+//               }), u = {
+//                   byMatcher: function(t, e, n) {
+//                       void 0 === n && (n = {}); {
+//                           if (t && t !== document) return e(t) ? t : this.byMatcher(t.parentNode, e, n);
+//                           if (n.throwOnMiss) throw new Error("Expected to find parent node, but none was found.")
+//                       }
+//                   },
+//                   byClassName: function(t, e, n) {
+//                       return this.byMatcher(t, function(t) {
+//                           return t.classList.contains(e)
+//                       }, n)
+//                   }
+//               }, f = [], c = document.querySelectorAll("[data-offset]"), d = 0; d < c.length; d++) {
+//               var l = c[d],
+//                   m = l;
+//               null != l.dataset.container && (m = u.byClassName(l, l.dataset.container)), l.style.willChange = "transform", f.push({
+//                   element: l,
+//                   transform: parseFloat(l.dataset.offset, 10),
+//                   container: m,
+//                   mouse: null != l.dataset.mouse
+//               })
+//           }
+//           var p = 0,
+//               h = 0,
+//               w = function(t, e) {
+//                   for (var n = window.innerHeight, r = window.innerWidth, o = 0; o < f.length; o++) {
+//                       var i = f[o];
+//                       if (i.mouse && e || !e) {
+//                           var a = i.container.getBoundingClientRect();
+//                           if (a.bottom > -n && a.top < 2 * n) {
+//                               var u = 100 * h + a.top + a.height / 2,
+//                                   c = (u - n / 2) / i.transform,
+//                                   d = 0;
+//                               if (i.mouse) {
+//                                   var l = 100 * p + a.left + a.width / 2;
+//                                   d = (l - r / 2) / i.transform
+//                               }
+//                               i.element.style[s("transform")] = "translate(" + d + "px, " + c + "px)"
+//                           }
+//                       }
+//                   }
+//                   if (t)
+//                       for (var o = 0; o < f.length; o++) {
+//                           var i = f[o],
+//                               a = i.container.getBoundingClientRect(),
+//                               m = a.top + a.height / 2,
+//                               w = (m - n / 2) / i.transform;
+//                           i.element.style[s("transform")] = "translate(0px, " + w + "px)"
+//                       }
+//               };
+//           window.addEventListener("mousemove", function(t) {
+//               p = t.clientX / window.innerWidth * 2 - 1, h = t.clientY / window.innerHeight * 2 - 1, requestAnimationFrame(function() {
+//                   w(!1, !0)
+//               })
+//           }), w(!0), setTimeout(function() {
+//               w()
+//           }), window.addEventListener("scroll", function() {
+//               w()
+//           }), window.addEventListener("resize", function() {
+//               w()
+//           })
+//       }
+//   }, function(t, e) {}]);
 // }
-
-// $('html').keydown(function(){
-//   var ppbtntext = $('#ppbtn').text();
-//   if (event.keyCode == 81) {
-//     if (ppbtntext == 'ON') {
-//       $('#ppbtn').text('OFF');
-//       $('#pp').css('display', 'none');
-//     } else {
-//       $('#ppbtn').text('ON');
-//       $('#pp')        .css({
-//         ' z-index' : '1000000',
-//         display: 'block'
-//       });
-//     }
-//   }
-// });

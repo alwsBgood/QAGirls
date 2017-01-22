@@ -56,19 +56,20 @@ function GetClearPhoneNumber($number) {
   $number = str_replace('+', '', $number);
   return $number;
 }
+
 $name = getVar('name');
 $phone = getVar('custom_tel');
 $email = getVar('email');
 
-if (empty($name) && empty($phone) && empty($email)) {
-  $name = getVar('name');
-  $phone = getVar('custom_tel');
-  $email = getVar('email');
-} else {
-  $name = getVar('entry_648859501');
-  $phone = getVar('entry_1805884529');
-  $email = getVar('entry_1502780938');
-}
+// if (empty($name) && empty($phone) && empty($email)) {
+//   $name = getVar('name');
+//   $phone = getVar('custom_tel');
+//   $email = getVar('email');
+// } else {
+//   $name = getVar('entry_648859501');
+//   $phone = getVar('entry_1805884529');
+//   $email = getVar('entry_1502780938');
+// }
 
 $data = array(
   'name' => $name,
