@@ -2,8 +2,12 @@ User-agent: *
 Disallow: /ajax/
 Disallow: /php/
 Disallow: http://qagirl.pro/success/
+Disallow: http://qagirl.pro/success/index_question.html
+Disallow: http://qagirl.pro/success/success_info.html
 
 User-agent: Yandex
 Disallow: /ajax/
 Disallow: /php/
 Disallow: http://qagirl.pro/success/
+Disallow: http://qagirl.pro/success/index_question.html
+Disallow: http://qagirl.pro/success/success_info.html
