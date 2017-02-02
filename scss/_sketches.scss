@@ -31,8 +31,10 @@ cursor: -webkit-grabbing !important;
 }
 
 div[id*="modal_callback"]{
-  max-width: 850px;
-  min-width: 850px;
+
+  max-width: 860px;
+  min-width: 860px;
+
   h2{
     margin: 30px 30px 30px;
     background-position: bottom center;
@@ -51,7 +53,7 @@ div[id*="modal_callback"]{
     width: 100%;
   }
   .field{
-    width: 360px;
+    width: 390px;
     input{
       width: 100%;
       background: none;
@@ -152,7 +154,7 @@ div[id*="modal_politics"]{
     position: absolute;
     z-index: 20;
     top: 50%;
-    margin-top: -10px;
+    margin-top: -4px;
     display: block;
     right: 15px;
     height: 20px;

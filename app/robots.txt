@@ -1,9 +1,10 @@
 User-agent: *
 Disallow: /ajax/
 Disallow: /php/
-Disallow: http://qagirl.pro/success/
+Disallow: http://procut.com.ua/event/mk-montage/success/
+
 
 User-agent: Yandex
 Disallow: /ajax/
 Disallow: /php/
-Disallow: http://qagirl.pro/success/
+Disallow: http://procut.com.ua/event/mk-montage/success/
