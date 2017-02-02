@@ -471,49 +471,74 @@
   }
 }
 
-@media (max-width: 530px) {
-  #sec_02, #sec_05, #sec_06,
-  #sec_10, #sec_14{
-    display: none;
-  }
-  #sec_04{
-    h2+.item{
-      margin-left: 50px;
-    }
-  }
-  #sec_07{
-    .item.open{
-      .item_hidden_info{padding-top: 20px;}
-      .item_text{
-        transform: none;
-        padding-right: 0;
-        margin-bottom: 20px;
-      }
-      .item_text:before{right: 0;}
-    }
-  }
-  #sec_11{
-    .item{
-      margin-left: 0;
-    }
-  }
-  #sec_15{
-    background-image: url(../img/footer-bg-mob.png);
-    .top{
-      text-align: center;
-      margin-top: 140px;
-      .logo{
-        float: none;
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
+// @media (max-width: 530px) {
+//   section{padding: 40px  0 !important ;}
+//   h2{
+//     font-size: 28px;
+//     line-height: 32px !important;
+//   }
+//   #sec_02{
+//     overflow: hidden;
+//     .tr .text_block {
+//       background-size : contain;
+//       width:  100%;
+//     }
+//     h2{
+//       margin-left: 0;
+//       margin-bottom: 40px;
+//     }
+//   }
+//   #sec_04{
+//     h2+.item{
+//       margin-left: 50px;
+//     }
+//   }
+//   #sec_07{
+//     .item.open{
+//       .item_hidden_info{padding-top: 20px;}
+//       .item_text{
+//         transform: none;
+//         padding-right: 0;
+//         margin-bottom: 20px;
+//       }
+//       .item_text:before{right: 0;}
+//     }
+//   }
+//   #sec_10{
+//     min-width: 100%;
+//     img{
+//       width:  100%;
+//       max-width: 344px;
+//     }
+//   }
+//   #sec_11{
+//     .item{
+//       margin-left: 0;
+//     }
+//   }
+//   #sec_13{
+//     padding-top: 0!important  ;
+//   }
+//   #sec_14{
+//     .first_img{margin-top: 0  ;}
+//   }
+//   #sec_15{
+//     background-image: url(../img/footer-bg-mob.png);
+//     .top{
+//       text-align: center;
+//       margin-top: 140px;
+//       .logo{
+//         float: none;
+//         margin-bottom: 10px;
+//       }
+//     }
+//   }
+// }
 
-@media (max-width: 410px) {
-  #sec_15{
-    .top{
-      margin-top: 230px;
-    }
-  }
-}
+// @media (max-width: 410px) {
+//   #sec_15{
+//     .top{
+//       margin-top: 230px;
+//     }
+//   }
+// }

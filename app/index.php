@@ -1537,7 +1537,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </span>
 
 
-                    <button type="submit" class="btn" name="send"><span>Жду звонка</span></button>
+                    <button type="submit" class="btn" name="send"><span>Жду урока</span></button>
 
                     <!-- Просто любое дополнительное поле -->
                     <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->

@@ -31,18 +31,18 @@ cursor: -webkit-grabbing !important;
 }
 
 div[id*="modal_callback"]{
-  max-width: 750px;
-  min-width: 750px;
+  max-width: 850px;
+  min-width: 850px;
   h2{
     margin: 30px 30px 30px;
     background-position: bottom center;
   }
   .h2_desc{margin-bottom: 25px;}
   .md-content{
-    padding: 42px 20px 70px 248px;
+    padding: 42px 20px 70px 300px;
     background: #fff url(../img/popup-bg.png) bottom left no-repeat;
     text-align: center;
-    min-height: 488px;
+    min-height: 535px;
   }
   form {
     display: block;

@@ -654,18 +654,18 @@ footer {
   width: 0; }
 
 div[id*="modal_callback"] {
-  max-width: 750px;
-  min-width: 750px; }
+  max-width: 850px;
+  min-width: 850px; }
   div[id*="modal_callback"] h2 {
     margin: 30px 30px 30px;
     background-position: bottom center; }
   div[id*="modal_callback"] .h2_desc {
     margin-bottom: 25px; }
   div[id*="modal_callback"] .md-content {
-    padding: 42px 20px 70px 248px;
+    padding: 42px 20px 70px 300px;
     background: #fff url(../img/popup-bg.png) bottom left no-repeat;
     text-align: center;
-    min-height: 488px; }
+    min-height: 535px; }
   div[id*="modal_callback"] form {
     display: block;
     max-width: 390px;
@@ -1347,34 +1347,3 @@ input:-ms-input-placeholder {
     padding-top: 70px; }
   div[id*='modal_politics'] .btn_close_modal {
     top: 20px; } }
-
-@media (max-width: 530px) {
-  #sec_02, #sec_05, #sec_06,
-  #sec_10, #sec_14 {
-    display: none; }
-  #sec_04 h2 + .item {
-    margin-left: 50px; }
-  #sec_07 .item.open .item_hidden_info {
-    padding-top: 20px; }
-  #sec_07 .item.open .item_text {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    padding-right: 0;
-    margin-bottom: 20px; }
-  #sec_07 .item.open .item_text:before {
-    right: 0; }
-  #sec_11 .item {
-    margin-left: 0; }
-  #sec_15 {
-    background-image: url(../img/footer-bg-mob.png); }
-    #sec_15 .top {
-      text-align: center;
-      margin-top: 140px; }
-      #sec_15 .top .logo {
-        float: none;
-        margin-bottom: 10px; } }
-
-@media (max-width: 410px) {
-  #sec_15 .top {
-    margin-top: 230px; } }
