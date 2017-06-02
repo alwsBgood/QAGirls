@@ -1,7 +1,4 @@
-<?php
-    require 'db/data.php';
-    require 'db/visits.php';
-?>
+
 
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
@@ -10,13 +7,6 @@
 <script>
 dataLayer = [];
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-564FF3');</script>
-<!-- End Google Tag Manager -->
     <meta charset="utf-8">
 
     <title>QA Girls</title>
@@ -56,8 +46,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- FONTS+HEADER -->
     <style>@font-face{font-family:"Gilroy-Light";font-style:normal;font-weight:400;src:url(fonts/Gilroy-Light.woff2) format("woff2"),url(fonts/Gilroy-Light.woff) format("woff")}@font-face{font-family:"Gilroy-Extrabold";font-style:normal;font-weight:400;src:url(fonts/Gilroy-ExtraBold.woff2) format("woff2"),url(fonts/Gilroy-ExtraBold.woff) format("woff")}@font-face{font-family:"Corinthia";font-style:normal;font-weight:400;src:url(fonts/Corinthia.woff2) format("woff2"),url(fonts/Corinthia.woff) format("woff")}
-    body{position:relative;font:18px/24px Gilroy-Light,sans-serif;color:#8a8a8a;background-color:#f9f8f8}body.unscroll{overflow:hidden}a,button,input,textarea{text-decoration:none;outline:0;border:0;-webkit-transition:color .4s ease,background-color .4s ease,background-image .4s ease,border-color .4s ease;transition:color .4s ease,background-color .4s ease,background-image .4s ease,border-color .4s ease}a:focus,button:focus,input:focus,textarea:focus{outline:0}input,textarea{-webkit-box-sizing:border-box;box-sizing:border-box}textarea{resize:none}button:hover,a:hover{cursor:pointer}.md-modal.md-show{opacity:1}.md-modal{opacity:0}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 20px rgba(0,0,0,0.3)}::-webkit-scrollbar-thumb{-webkit-border-radius:0;border-radius:0;background:#4dd0e4;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5)}::-webkit-scrollbar-thumb:window-inactive{background:#4dd0e4}#scrollup{position:fixed;right:20px;bottom:30px;width:30px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);display:none;opacity:1;cursor:pointer;z-index:10;font-size:40px;text-shadow:-2px 2px 5px rgba(0,0,0,0.3);-webkit-transition:all .5s;transition:all .5s}#scrollup svg{fill:#848484;-webkit-transition:all .5s;transition:all .5s}#scrollup:hover svg{fill:#4dd0e4}.hidden{height:0;width:0}.bar-long{height:5px;width:0;z-index:1000;position:fixed;top:0;left:0;background:#4dd0e4}.btn{position:relative;overflow:hidden;width:250px;height:50px;-webkit-box-shadow:0 12px 32px rgba(255,53,124,0.47);box-shadow:0 12px 32px rgba(255,53,124,0.47);-webkit-border-radius:24px;border-radius:24px;background-color:#fea7b2;background-image:-webkit-gradient(linear,left bottom,left top,from(#4dd0e4),to(#6fecff));background-image:-webkit-linear-gradient(bottom,#4dd0e4 0%,#6fecff 100%);background-image:linear-gradient(to top,#4dd0e4 0%,#6fecff 100%);color:#fff;font:18px Gilroy-Extrabold,sans-serif;-webkit-transition:all .3s;transition:all .3s}.btn span{position:relative;z-index:10}.btn:before{position:absolute;content:'';width:100%;height:100%;left:0;top:0;-webkit-border-radius:24px;border-radius:24px;background-image:-webkit-gradient(linear,left bottom,left top,from(#e6155e),to(#ff357c));background-image:-webkit-linear-gradient(bottom,#e6155e 0%,#ff357c 100%);background-image:linear-gradient(to top,#e6155e 0%,#ff357c 100%);-webkit-transition:opacity .3s;transition:opacity .3s}.btn:hover:before{opacity:0}.btn:hover{background-color:#4dd0e4;-webkit-box-shadow:0 12px 32px rgba(46,227,255,0.47);box-shadow:0 12px 32px rgba(46,227,255,0.47)}.btn:active{color:#0d6a78;-webkit-box-shadow:0 12px 32px rgba(46,227,255,0.47);box-shadow:0 12px 32px rgba(46,227,255,0.47);-webkit-border-radius:24px;border-radius:24px;background-color:#30a0b1;background-image:-webkit-gradient(linear,left bottom,left top,from(#248998),to(#3eb9cc));background-image:-webkit-linear-gradient(bottom,#248998 0%,#3eb9cc 100%);background-image:linear-gradient(to top,#248998 0%,#3eb9cc 100%)}h2{color:#000;font:48px/44px Gilroy-Extrabold,sans-serif;padding-bottom:25px}.title{color:#000;font:22px/24px Gilroy-Extrabold,sans-serif}.block_title,.title_block{color:#000;font:32px/36px Gilroy-Extrabold,sans-serif;padding-bottom:15px}.italic{font-family:"Corinthia",sans-serif}.pink{color:#fea7b2}.blue{color:#4dd0e4}.black{color:#000}.b163{background:url(img/underlines/163-b.png) left bottom no-repeat}.b361{background:url(img/underlines/361-b.png) left bottom no-repeat}.b75{background:url(img/underlines/75-b.png) left bottom no-repeat}.p286{background:url(img/underlines/286-p.png) left bottom no-repeat}.p336{background:url(img/underlines/336-p.png) left bottom no-repeat}.p372{background:url(img/underlines/372-p.png) left bottom no-repeat}.p361{background:url(img/underlines/361-p.png) left bottom no-repeat}.w286{background:url(img/underlines/286-w.png) left bottom no-repeat}#sec_01{padding:25px 0 200px;background:url(img/sec_01-bg.png) top center no-repeat}#sec_01 .text_block{position:relative;margin-top:230px}#sec_01 .text_block .bold_text{position:absolute;top:-5px;left:235px;color:#056676;font:24px Gilroy-Extrabold,sans-serif}#sec_01 .text_block .italic{position:absolute;top:-27px;right:74px;color:#fea6b2;font-size:50px}#sec_01 h1{color:#fff;font:100px/102px Gilroy-Extrabold,sans-serif;margin-left:95px}#sec_01 h1 span{position:relative;display:inline-block;margin-left:175px;z-index:2}#sec_01 h1 span:before{position:absolute;content:'';width:705px;height:723px;left:-275px;top:-229px;background:url(img/sec_01--top_layer.png) center no-repeat;z-index:-1}#sec_01 .btn{margin:235px auto 0;z-index:10}.top .call{float:right;margin-top:5px}.top .call .tel{color:#000;font:18px/50px Gilroy-Extrabold,sans-serif;display:inline-block;-webkit-transition:color .3s;transition:color .3s}.top .call .tel:hover{color:#EA8998}.top .call .call_btn{width:200px;height:40px;float:right;margin-left:30px;-webkit-border-radius:19px;border-radius:19px;background-color:#fff;-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;color:#066372;font:18px Gilroy-Extrabold,sans-serif}.top .call .call_btn:hover{color:#fff;background-color:#fd327a}.top .call .call_btn:active{color:#b20d47;background-color:#e81861}@media (min-width: 992px) and (max-width: 1200px){#sec_01 h1{margin-left:0}#sec_01 h1 span{margin-left:164px}#sec_01 .text_block .bold_text{left:150px}#sec_01 .text_block .italic{right:0}}@media (min-width: 768px) and (max-width: 991px){body{font-size:16px}h2{font:36px/40px Gilroy-Extrabold,sans-serif}h2 br{display:none}.title{font:18px/20px Gilroy-Extrabold,sans-serif}.block_title,.title_block{font:26px/32px Gilroy-Extrabold,sans-serif}#sec_01{padding:20px 0 180px!important}#sec_01 h1{font-size:64px;margin:0}#sec_01 h1 span:before{background-size:contain;width:500px;height:500px;top:-120px;left:-250px}#sec_01 .text_block .bold_text{left:93px;font-size:19px;top:5px}#sec_01 .text_block .italic{right:35px;font-size:40px;top:0}}@media (max-width: 767px){body{font-size:16px}h2{font:36px/40px Gilroy-Extrabold,sans-serif}h2 br{display:none}.title{font:18px/20px Gilroy-Extrabold,sans-serif}.block_title,.title_block{font:26px/32px Gilroy-Extrabold,sans-serif;display:inline-block}#sec_01{text-align:center;padding:20px 0 180px!important}#sec_01 .text_block{margin-top:60px;display:inline-block}#sec_01 h1{font-size:64px;line-height:70px;margin:0;text-align:center}#sec_01 h1 span:before{background-size:contain;width:400px;height:400px;top:75px;left:-140px}#sec_01 h1 span{margin:0}#sec_01 .text_block .bold_text{position:static;text-align:center}#sec_01 .text_block .italic{display:none}#sec_01 .btn{margin-top:360px}}@media (max-width: 530px){.top .call{float:none;margin-top:0}.top .call .tel{font:16px/40px Gilroy-Extrabold,sans-serif}.top .call .call_btn{margin:0 auto;float:none}#sec_01{padding-bottom:200px!important;background:url(img/sec_01-bg_mob.png) bottom left no-repeat}#sec_01 h1{line-height:52px;margin-top:5px}#sec_01 h1 span:before{display:none}#sec_01 .btn{margin-top:50px}}@media (max-width: 410px){#sec_01{background:url(img/sec_01-bg_mobsm.png) bottom center no-repeat}}
-    </style>
+    body{position:relative;font:18px/24px Gilroy-Light,sans-serif;color:#8a8a8a;background-color:#f9f8f8}body.unscroll{overflow:hidden}a,button,input,textarea{text-decoration:none;outline:0;border:0;-webkit-transition:color .4s ease,background-color .4s ease,background-image .4s ease,border-color .4s ease;transition:color .4s ease,background-color .4s ease,background-image .4s ease,border-color .4s ease}a:focus,button:focus,input:focus,textarea:focus{outline:0}input,textarea{-webkit-box-sizing:border-box;box-sizing:border-box}textarea{resize:none}button:hover,a:hover{cursor:pointer}.md-modal.md-show{opacity:1}.md-modal{opacity:0}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 20px rgba(0,0,0,0.3)}::-webkit-scrollbar-thumb{-webkit-border-radius:0;border-radius:0;background:#4dd0e4;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5)}::-webkit-scrollbar-thumb:window-inactive{background:#4dd0e4}#scrollup{position:fixed;right:20px;bottom:30px;width:30px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);display:none;opacity:1;cursor:pointer;z-index:10;font-size:40px;text-shadow:-2px 2px 5px rgba(0,0,0,0.3);-webkit-transition:all .5s;transition:all .5s}#scrollup svg{fill:#848484;-webkit-transition:all .5s;transition:all .5s}#scrollup:hover svg{fill:#4dd0e4}.hidden{height:0;width:0}.bar-long{height:5px;width:0;z-index:1000;position:fixed;top:0;left:0;background:#4dd0e4}.btn{position:relative;overflow:hidden;width:250px;height:50px;-webkit-box-shadow:0 12px 32px rgba(255,53,124,0.47);box-shadow:0 12px 32px rgba(255,53,124,0.47);-webkit-border-radius:24px;border-radius:24px;background-color:#fea7b2;background-image:-webkit-gradient(linear,left bottom,left top,from(#4dd0e4),to(#6fecff));background-image:-webkit-linear-gradient(bottom,#4dd0e4 0%,#6fecff 100%);background-image:linear-gradient(to top,#4dd0e4 0%,#6fecff 100%);color:#fff;font:18px Gilroy-Extrabold,sans-serif;-webkit-transition:all .3s;transition:all .3s}.btn span{position:relative;z-index:10}.btn:before{position:absolute;content:'';width:100%;height:100%;left:0;top:0;-webkit-border-radius:24px;border-radius:24px;background-image:-webkit-gradient(linear,left bottom,left top,from(#e6155e),to(#ff357c));background-image:-webkit-linear-gradient(bottom,#e6155e 0%,#ff357c 100%);background-image:linear-gradient(to top,#e6155e 0%,#ff357c 100%);-webkit-transition:opacity .3s;transition:opacity .3s}.btn:hover:before{opacity:0}.btn:hover{background-color:#4dd0e4;-webkit-box-shadow:0 12px 32px rgba(46,227,255,0.47);box-shadow:0 12px 32px rgba(46,227,255,0.47)}.btn:active{color:#0d6a78;-webkit-box-shadow:0 12px 32px rgba(46,227,255,0.47);box-shadow:0 12px 32px rgba(46,227,255,0.47);-webkit-border-radius:24px;border-radius:24px;background-color:#30a0b1;background-image:-webkit-gradient(linear,left bottom,left top,from(#248998),to(#3eb9cc));background-image:-webkit-linear-gradient(bottom,#248998 0%,#3eb9cc 100%);background-image:linear-gradient(to top,#248998 0%,#3eb9cc 100%)}h2{color:#000;font:48px/44px Gilroy-Extrabold,sans-serif;padding-bottom:25px}.title{color:#000;font:22px/24px Gilroy-Extrabold,sans-serif}.block_title,.title_block{color:#000;font:32px/36px Gilroy-Extrabold,sans-serif;padding-bottom:15px}.italic{font-family:"Corinthia",sans-serif}.pink{color:#fea7b2}.blue{color:#4dd0e4}.black{color:#000}.b163{background:url(../img/underlines/163-b.png) left bottom no-repeat}.b361{background:url(../img/underlines/361-b.png) left bottom no-repeat}.b75{background:url(../img/underlines/75-b.png) left bottom no-repeat}.p286{background:url(../img/underlines/286-p.png) left bottom no-repeat}.p336{background:url(../img/underlines/336-p.png) left bottom no-repeat}.p372{background:url(../img/underlines/372-p.png) left bottom no-repeat}.p361{background:url(../img/underlines/361-p.png) left bottom no-repeat}.w286{background:url(../img/underlines/286-w.png) left bottom no-repeat}#sec_01{padding:25px 0 200px;background:url(../img/sec_01-bg.png) top center no-repeat}#sec_01 .text_block{position:relative;margin-top:230px}#sec_01 .text_block .bold_text{position:absolute;top:-5px;left:235px;color:#056676;font:24px Gilroy-Extrabold,sans-serif}#sec_01 .text_block .italic{position:absolute;top:-27px;right:74px;color:#fea6b2;font-size:50px}#sec_01 h1{color:#fff;font:100px/102px Gilroy-Extrabold,sans-serif;margin-left:95px}#sec_01 h1 span{position:relative;display:inline-block;margin-left:175px;z-index:2}#sec_01 h1 span:before{position:absolute;content:'';width:705px;height:723px;left:-275px;top:-229px;background:url(../img/sec_01--top_layer.png) center no-repeat;z-index:-1}#sec_01 .btn{margin:235px auto 0;z-index:10}.top .call{float:right;margin-top:5px}.top .call .tel{color:#000;font:18px/50px Gilroy-Extrabold,sans-serif;display:inline-block;-webkit-transition:color .3s;transition:color .3s}.top .call .tel:hover{color:#EA8998}.top .call .call_btn{width:200px;height:40px;float:right;margin-left:30px;-webkit-border-radius:19px;border-radius:19px;background-color:#fff;-webkit-transition:background-color .3s,color .3s;transition:background-color .3s,color .3s;color:#066372;font:18px Gilroy-Extrabold,sans-serif}.top .call .call_btn:hover{color:#fff;background-color:#fd327a}.top .call .call_btn:active{color:#b20d47;background-color:#e81861}@media (min-width: 992px) and (max-width: 1200px){#sec_01 h1{margin-left:0}#sec_01 h1 span{margin-left:164px}#sec_01 .text_block .bold_text{left:150px}#sec_01 .text_block .italic{right:0}}@media (min-width: 768px) and (max-width: 991px){body{font-size:16px}h2{font:36px/40px Gilroy-Extrabold,sans-serif}h2 br{display:none}.title{font:18px/20px Gilroy-Extrabold,sans-serif}.block_title,.title_block{font:26px/32px Gilroy-Extrabold,sans-serif}#sec_01{padding:20px 0 180px!important}#sec_01 h1{font-size:64px;margin:0}#sec_01 h1 span:before{background-size:contain;width:500px;height:500px;top:-120px;left:-250px}#sec_01 .text_block .bold_text{left:93px;font-size:19px;top:5px}#sec_01 .text_block .italic{right:35px;font-size:40px;top:0}}@media (max-width: 767px){body{font-size:16px}h2{font:36px/40px Gilroy-Extrabold,sans-serif}h2 br{display:none}.title{font:18px/20px Gilroy-Extrabold,sans-serif}.block_title,.title_block{font:26px/32px Gilroy-Extrabold,sans-serif;display:inline-block}#sec_01{text-align:center;padding:20px 0 180px!important}#sec_01 .text_block{margin-top:60px;display:inline-block}#sec_01 h1{font-size:64px;line-height:70px;margin:0;text-align:center}#sec_01 h1 span:before{background-size:contain;width:400px;height:400px;top:75px;left:-140px}#sec_01 h1 span{margin:0}#sec_01 .text_block .bold_text{position:static;text-align:center}#sec_01 .text_block .italic{display:none}#sec_01 .btn{margin-top:360px}}@media (max-width: 530px){.top .call{float:none;margin-top:0}.top .call .tel{font:16px/40px Gilroy-Extrabold,sans-serif}.top .call .call_btn{margin:0 auto;float:none}#sec_01{padding-bottom:200px!important;background:url(../img/sec_01-bg_mob.png) bottom left no-repeat}#sec_01 h1{line-height:52px;margin-top:5px}#sec_01 h1 span:before{display:none}#sec_01 .btn{margin-top:50px}}@media (max-width: 410px){#sec_01{background:url(../img/sec_01-bg_mobsm.png) bottom center no-repeat}}@media (min-height: 510px) and (max-height: 660px){#sec_01{height:100vh}}@media (max-width: 530px){section{padding:40px 0!important}h2{font-size:28px;line-height:32px!important}#sec_02{overflow:hidden}#sec_02 .tr .text_block{background-size:contain;width:100%}#sec_02 h2{margin-left:0;margin-bottom:40px}#sec_04 h2 + .item{margin-left:50px}#sec_07 .item.open .item_hidden_info{padding-top:20px}#sec_07 .item.open .item_text{-webkit-transform:none;-ms-transform:none;transform:none;padding-right:0;margin-bottom:20px}#sec_07 .item.open .item_text:before{right:0}#sec_10{min-width:100%}#sec_10 img{width:100%;max-width:344px}#sec_11 .item{margin-left:0}#sec_13{padding-top:0!important}#sec_14 .first_img{margin-top:0}#sec_15{background-image:url(../img/footer-bg-mob.png)}#sec_15 .top{text-align:center;margin-top:140px}#sec_15 .top .logo{float:none;margin-bottom:10px}}@media (max-width: 410px){#sec_15 .top{margin-top:230px}}</style>
+
 
     <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
     <script>!function(a){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(b,c){return a.localStorage&&localStorage[b+"_content"]&&localStorage[b+"_file"]===c}function d(b,d){if(a.localStorage&&a.XMLHttpRequest)c(b,d)?f(localStorage[b+"_content"]):e(b,d);else{var h=g.createElement("link");h.href=d,h.id=b,h.rel="stylesheet",h.type="text/css",g.getElementsByTagName("head")[0].appendChild(h),g.cookie=b}}function e(a,b){var c=new XMLHttpRequest;c.open("GET",b,!0),c.onreadystatechange=function(){4===c.readyState&&200===c.status&&(f(c.responseText),localStorage[a+"_content"]=c.responseText,localStorage[a+"_file"]=b)},c.send()}function f(a){var b=g.createElement("style");b.setAttribute("type","text/css"),g.getElementsByTagName("head")[0].appendChild(b),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a}var g=a.document;a.loadCSS=function(a,b,c){var d,e=g.createElement("link");if(b)d=b;else{var f;f=g.querySelectorAll?g.querySelectorAll("style,link[rel=stylesheet],script"):(g.body||g.getElementsByTagName("head")[0]).childNodes,d=f[f.length-1]}var h=g.styleSheets;e.rel="stylesheet",e.href=a,e.media="only x",d.parentNode.insertBefore(e,b?d:d.nextSibling);var i=function(a){for(var b=e.href,c=h.length;c--;)if(h[c].href===b)return a();setTimeout(function(){i(a)})};return e.onloadcssdefined=i,i(function(){e.media=c||"all"}),e},a.loadLocalStorageCSS=function(e,f){c(e,f)||g.cookie.indexOf(e)>-1?d(e,f):b(a,"load",function(){d(e,f)})}}(this);</script>
@@ -77,10 +67,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-564FF3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div class="bar-long"></div>
 <div id="scrollup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.054 286.054"><path d="M143.027 0C64.04 0 0 64.04 0 143.027c0 78.996 64.04 143.027 143.027 143.027s143.027-64.03 143.027-143.027C286.054 64.05 222.014 0 143.027 0zm0 259.236c-64.183 0-116.21-52.026-116.21-116.21s52.027-116.2 116.21-116.2 116.21 52.018 116.21 116.2-52.027 116.21-116.21 116.21zm51.677-125.148h-24.86V89.392c0-4.934-3.996-8.94-8.94-8.94H125.15c-4.934 0-8.94 4.006-8.94 8.94v44.696H91.342c-9.698 0-13.667 6.463-8.822 14.338l51.686 51.096c4.845 7.884 12.783 7.884 17.637 0l51.678-51.096c4.863-7.875.894-14.338-8.814-14.338z"/></svg></div>
 
@@ -103,7 +89,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="bold_text">Онлайн-курс </p>
                     <p class="italic">Не подарили, а заработала!</p>
                     <h1 > QA для <span>девушек</span></h1>
-                    <a class="md-trigger flex btn" data-modal="modal_callback_request"><span>Начать обучение</span></a>
+                    <a class="md-trigger flex btn" data-modal="modal_callback_request"><span>Заказать LP</span></a>
                 </div>
             </div>
         </div>
@@ -116,15 +102,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2 data-offset="-10" class="w286">Ты смотришь <br /> на идеальные туфли...</h2>
-                <img class="img_1" data-offset="10" src="img/sec_02-img-1.png" alt="Девушка в восторге">
+                <h2 data-offset="-30" class="w286">Ты смотришь <br /> на идеальные туфли...</h2>
+                <img class="img_1" data-offset="30" src="img/sec_02-img-1.png" alt="Девушка в восторге">
             </div>
             <div  class="col-6 tr">
                 <div class="wrap">
-                    <img class="img_2" data-offset="-10" src="img/sec_02-img-2.png" alt="Идеальные туфли">
-                    <p data-offset="20" class="title p372 title_block">...Туфли смотрят на тебя.</p>
+                    <img class="img_2" data-offset="-30" src="img/sec_02-img-2.png" alt="Идеальные туфли">
+                    <p data-offset="40" class="title p372 title_block">...Туфли смотрят на тебя.</p>
                     <div  class="text_block">
-                        <ul data-offset="-8" class="italic">
+                        <ul data-offset="-38" class="italic">
                             <li>Искра!</li>
                             <li>Буря.!</li>
                             <li>Безумие!</li>
@@ -205,18 +191,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                </div>
             </div>
             <div class="col-6 tr">
-                <img  class="img_1" src="img/sec_03-img-1.png" alt="Девушка с туфлями">
+                <img data-offset="35" class="img_1" src="img/sec_03-img-1.png" alt="Девушка с туфлями">
             </div>
         </div>
         <div class="row second_row">
             <div class="col-6">
-                <img class="img_2" src="img/sec_03-img-2.png" alt="Девушка за работой">
+                <img data-offset="-35" class="img_2" src="img/sec_03-img-2.png" alt="Девушка за работой">
             </div>
             <div class="col-6">
                 <div class="center_block tc">
                     <p class="title block_title b163">Регистрируйся <br /> на онлайн-курс по QA!</p>
                     <p class="italic">Всего <span class="blue"> 3 месяца</span> и ты <br /> — востребованный IT-специалист. </p>
-                    <a class="md-trigger flex btn" data-modal="modal_callback_request"><span>Начать курс по QA</span></a>
+                    <a class="md-trigger flex btn" data-modal="modal_callback_request"><span>Заказть LP</span></a>
                 </div>
             </div>
         </div>
@@ -234,18 +220,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="title">QA-инженер</p>
                     <p class="text">IT-специалист, который ищет ошибки <br /> в программном обеспечении: мобильных <br /> приложениях, играх, на сайтах и т.д. <br /> Ты наверняка слышала сленговое название этой <br /> профессии — тестировщик. </p>
                 </div>
-                <img  data-offset="15" src="img/sec_04-img-1.png" alt="Ошибки в коде" class="left_img img_1">
+                <img  data-offset="35" src="img/sec_04-img-1.png" alt="Ошибки в коде" class="left_img img_1">
             </div>
             <div class="col-6 second_column clearfix">
                 <div class="wrap">
-                    <img class="img_2" data-offset="-25" src="img/sec_04-img-2.png" alt="Работа с кодом">
-                    <div data-offset="15" class="item_pink">
+                    <img  class="img_2" data-offset="-45" src="img/sec_04-img-2.png" alt="Работа с кодом">
+                    <div data-offset="35" class="item_pink">
                         <p class="block_title pink b163">Этот специалист <br /> проверяет ПО</p>
                         <p class="text">Cогласно заранее составленным сценариям <br /> — например, для интернет-магазина это может быть путь “загрузить главную страницу\ найти товар\добавить его в корзину\оформить заказ”.</p>
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="item_pink" data-offset="-12">
+                <div class="item_pink" data-offset="-35">
                     <p class="block_title pink b163">Задача <br /> тестировщика</p>
                     <p class="text">Найти и устранить ошибки (баги). Именно благодаря <br /> QA-специалисту мы пользуемся логичными, <br /> понятными и отлаженными приложениями.</p>
                 </div>
@@ -260,7 +246,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <img class="img_1" src="img/sec_05-img-1.png" alt="Интересная работа в IT">
+                <img data-offset="-35" class="img_1" src="img/sec_05-img-1.png" alt="Интересная работа в IT">
                 <div class="item">
                     <p class="block_title b163">Работа в IT</p>
                     <p class="text">Это не просто хороший доход. Это комфортные <br />  условия труда, возможность работать в любом месте, статус в обществе. А еще это отличный способ завести полезные знакомства в IT.</p>
@@ -272,7 +258,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p style="line-height: 28px;" class="text">Согласно опросникам DOU, с каждым годом количество женщин в IT становится больше. QA — самая востребованная специальность среди девочек.</p>
                 <p class="title">Девушки действительно <br /> востребованы в QA.</p>
                 <p class="text">Как правило, они более скрупулезны и внимательны, <br /> чем мужчины. Девушки легче находят ошибки, они усидчивы и многозадачны. Именно поэтому многие девочки в IT начинают свою карьеру со сферы QA.</p>
-                <img class="right img_2" src="img/sec_05-img-2.png" alt="Влюбленная девушка">
+                <img data-offset="35" class="right img_2" src="img/sec_05-img-2.png" alt="Влюбленная девушка">
                 <div class="clear"></div>
             </div>
         </div>
@@ -285,18 +271,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="row">
             <div class="col-6 first_column">
-                <img data-offset="-18" src="img/sec_06-img-1.png" alt="Running time">
-                <div data-offset="15" class="item_pink">
+                <img data-offset="-35" src="img/sec_06-img-1.png" alt="Running time">
+                <div data-offset="40" class="item_pink">
                     <p class="block_title pink b163">Обучение <br /> в этой профессии <br /> сравнительно быстро</p>
                     <p class="text">А скилл всегда востребован. <br /> Такой специалист может легко сменить <br /> профиль в сторону менеджмента, <br /> программирования, аналитики.</p>
                 </div>
             </div>
             <div class="col-6 second_column">
-                <h2 data-offset="14" class="p286">Кстати: навык QA <br /> нужен не только тем, <br /> кто хочет стать  <br /> тестировщиком.</h2>
+                <h2 data-offset="40" class="p286">Кстати: навык QA <br /> нужен не только тем, <br /> кто хочет стать  <br /> тестировщиком.</h2>
                 <div class="tr">
-                    <img data-offset="18" src="img/sec_06-img-2.png" alt="Девушка работает в кафе">
+                    <img data-offset="40" src="img/sec_06-img-2.png" alt="Девушка работает в кафе">
                 </div>
-                <div data-offset="22" class="item_pink">
+                <div data-offset="40" class="item_pink">
                     <p class="block_title pink b75">Поэтому QA </p>
                     <p class="text">Это самый быстрый способ <br /> построить карьеру в IT-сфере. </p>
                 </div>
@@ -305,14 +291,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="row second_row">
             <div class="col-6">
-                <img src="img/sec_06-img-3.png" alt="Девушка с младенцем работает">
+                <img data-offset="-35" src="img/sec_06-img-3.png" alt="Девушка с младенцем работает">
             </div>
             <div class="col-6">
                 <div class="center_block tc">
                     <p class="block_title b163">Сидишь в декрете <br /> и не можешь работать в офисе?</p>
                     <p class="text">QA — специальность, в которой для работы <br /> нужен только ноутбук. </p>
                     <p class="italic">Малыш спит — ты зарабатываешь. </p>
-                    <a class="md-trigger btn flex" data-modal="modal_callback_request"><span>Хочу работать QA</span></a>
+                    <a class="md-trigger btn flex" data-modal="modal_callback_request"><span>Хочу крутой LP</span></a>
                 </div>
             </div>
         </div>
@@ -1003,11 +989,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="row">
             <div class="col-6 tc">
-                <img data-offset="15" src="img/sec_08-img.png" alt="Рабочее место">
+                <img data-offset="45" src="img/sec_08-img.png" alt="Рабочее место">
             </div>
             <div class="col-6">
                 <h2 class="p286">Кто обучает</h2>
-                <p class="title">Практикующие QA-специалисты <br /> уровня midlle+</p>
+                <p class="title">Практикующие QA-специалисты <br /> уровня middle+</p>
                 <p class="text">Проверяют практическое домашнее задание, которое <br /> ты будешь проходить после каждого модуля теории. Они дают развернутый фидбек, корректируют ошибки и помогают <br /> разобраться со сложными вопросами. </p>
             </div>
         </div>
@@ -1025,14 +1011,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="text">Поэтому, если у тебя есть сомнения...</p>
                     <p class="title">Посмотри бесплатные уроки. <br /> Прямо сейчас</p>
                 </div>
-                <img class="img_1" data-offset="20" src="img/sec_09-img-1.png" alt="Видеоурок">
+                <img class="img_1" data-offset="40" src="img/sec_09-img-1.png" alt="Видеоурок">
             </div>
-            <div data-offset="-20" class="col-6 tc">
-            <img data-offset="-20" src="img/sec_09-img-2.png" alt="Доступ к урокам">
+            <div data-offset="-40" class="col-6 tc">
+            <img data-offset="-40" src="img/sec_09-img-2.png" alt="Доступ к урокам">
                 <div class="center_block">
                     <p class="block_title b163">Жми кнопку</p>
                     <p class="italic">И получи доступ <br /> к <span class="blue">5</span> бесплатным урокам.</p>
-                    <a class="md-trigger btn flex" data-modal="modal_callback_request_lessons" ><span>Получить первый урок</span></a>
+                    <a class="md-trigger btn flex" data-modal="modal_callback_request_lessons" ><span>Закать LP</span></a>
                 </div>
             </div>
         </div>
@@ -1046,7 +1032,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
             <div class="col-4">
                 <h2 class="p336">Онлайн <br /> -обучение <br /> — это выгодно </h2>
-                <img data-offset="20" src="img/sec_10-img-1.png" alt="Время идет">
+                <img data-offset="40" src="img/sec_10-img-1.png" alt="Время идет">
             </div>
             <div class="col-4">
                 <div class="item">
@@ -1077,26 +1063,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2  data-offset="10" class="b361">Согласно <br /> статистике DOU</h2>
-                <div  data-offset="-10" class="item">
+                <h2  data-offset="30" class="b361">Согласно <br /> статистике DOU</h2>
+                <div  data-offset="-30" class="item">
                     <p class="pink block_title">Зарплата Junior QA <br /> в Киеве составляет $500. </p>
                     <p class="text">При этом QA Engineer зарабатывает <br /> около $1250, а Senior QA — $2400.</p>
                 </div>
             </div>
             <div class="col-6 tr">
-                <img class="img_1" data-offset="-10" src="img/sec_11-img-1.png" alt="Счастливая девушка">
+                <img class="img_1" data-offset="-30" src="img/sec_11-img-1.png" alt="Счастливая девушка">
             </div>
         </div>
         <div class="row">
             <div class="col-6 tr">
-                <img class="img_2" data-offset="20" src="img/sec_11-img-2.png" alt="Модные идеальные туфли">
+                <img class="img_2" data-offset="40" src="img/sec_11-img-2.png" alt="Модные идеальные туфли">
             </div>
             <div class="col-6 tc">
                 <div class="center_block">
                     <p class="block_title">Начни учиться сегодня </p>
                     <p class="text">— Стань на шаг ближе к работе в офисе <br /> класса “А”, хорошей зарплате</p>
                     <p class="italic"> И тем самым идеальным туфлям.</p>
-                    <a class="md-trigger btn flex" data-modal="modal_callback_request"><span>Начать курс по QA</span></a>
+                    <a class="md-trigger btn flex" data-modal="modal_callback_request"><span>Хочу такой же ленд</span></a>
                 </div>
             </div>
         </div>
@@ -1120,12 +1106,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
             <div class="col-6 tr">
-                <img class="img_1" data-offset="-20" src="img/sec_12-img-1.png" alt="Девушка">
+                <img class="img_1" data-offset="-40" src="img/sec_12-img-1.png" alt="Девушка">
             </div>
         </div>
         <div class="row">
             <div class="col-6">
-                <img  class="img_2" data-offset="20" src="img/sec_12-img-2.png" alt="Целеустремленная девушка за работой">
+                <img  class="img_2" data-offset="40" src="img/sec_12-img-2.png" alt="Целеустремленная девушка за работой">
             </div>
             <div class="col-6 tc">
                 <div class="center_block">
@@ -1160,7 +1146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                <div class="center_block">
                    <p class="block_title b163">Не нужно рисковать.</p>
                    <p class="italic">Просто начни учиться.</p>
-                   <a class="md-trigger btn flex" data-modal="modal_callback_request"><span>Начать обучение</span></a>
+                   <a class="md-trigger btn flex" data-modal="modal_callback_request"><span>Заказать LP</span></a>
                </div>
            </div>
         </div>
@@ -1173,13 +1159,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <img   data-offset="20" class="first_img" src="img/sec_14-img-1.png" alt="Девушка работает">
-                <div data-offset="8" class="item item_first">
+                <img   data-offset="40" class="first_img" src="img/sec_14-img-1.png" alt="Девушка работает">
+                <div data-offset="35" class="item item_first">
                     <p   class="block_title pink b75">Уверенный <br /> пользователь ПК </p>
                     <p class="text">Эту странную фразу часто можно увидеть <br /> в описании вакансии. Звучит не очень, но смысл правильный — ты должна уметь работать <br /> с компьютером. Если ты не знаешь, как <br /> зарегистрировать почту, создать Google Drive или переустановить Windows — сначала <br /> придется овладеть базовыми навыками.</p>
                 </div>
                <div class="tr">
-                    <img  data-offset="25"  class="third_img" src="img/sec_14-img-3.png" alt="Девушка работает">
+                    <img  data-offset="35"  class="third_img" src="img/sec_14-img-3.png" alt="Девушка работает">
                </div>
             </div>
             <div class="col-6">
@@ -1200,7 +1186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="text">Важен уровень английского: без него ты не сможешь изучать актуальные материалы. общаться <br /> с коллегами и заказчиками из других стран. Если твои познания ограничены школьными, а уровень ниже Pre-Intermediate — подтяни английский! </p>
                 </div>
 
-                <div data-offset="-15" class="item item_third">
+                <div data-offset="-35" class="item item_third">
                     <p class="block_title pink b163">Мотивация — наше все </p>
                     <p class="text">Мы уже признались, что не знаем никаких секретов. <br /> Все, что у нас есть: хорошо продуманная <br /> программа, агрегированная информация, умело <br /> составленные практические задания <br /> и профессиональные менторы, которые будут тебя корректировать. Это крутой курс, да. Но главное — <br /> чтобы ты сама хотела достичь цели. </p>
                 </div>
@@ -1254,7 +1240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="QA Girls">
-                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="admin_email" value="project@rezart.agency">
                     <input type="hidden" name="form_type" value="firstForm ">
                     <!-- END Hidden Required Fields -->
 
@@ -1274,7 +1260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="bar"></span>
                     </span>
 
-                    <button type="submit" class="btn" name="send"><span>Начать учиться</span></button>
+                    <button type="submit" class="btn" name="send"><span>Заказать LP</span></button>
 
                     <!-- Просто любое дополнительное поле -->
                     <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
@@ -1364,7 +1350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="QA Girls">
-                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="admin_email" value="project@rezart.agency">
                     <input type="hidden" name="form_type" value="popUpCallback ">
                     <!-- END Hidden Required Fields -->
 
@@ -1440,7 +1426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="QA Girls">
-                    <input type="hidden" name="admin_email" value="
+                    <input type="hidden" name="admin_email" value="">
                     <input type="hidden" name="form_type" value="PopUpZayavka ">
                     <!-- END Hidden Required Fields -->
 
@@ -1488,7 +1474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
             </span>
             <div class="titlebox">
-                <h2 class="p361">Жду урока: </h2>
+                <h2 class="p361">Напишите мне: </h2>
             </div>
             <div>
                 <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
@@ -1522,7 +1508,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="QA Girls">
-                    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+                    <input type="hidden" name="admin_email" value="project@rezart.agency">
                     <input type="hidden" name="goal" value="conversion_1">
                     <input type="hidden" name="form_type" value="firstForm ">
                     <!-- END Hidden Required Fields -->
@@ -1539,7 +1525,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </span>
 
 
-                    <button type="submit" class="btn" name="send"><span>Жду урока</span></button>
+                    <button type="submit" class="btn" name="send"><span>Жду письма</span></button>
 
                     <!-- Просто любое дополнительное поле -->
                     <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
