@@ -305,7 +305,7 @@ dataLayer = [];
 
 <!--============================SECTION================================-->
 
-<section id="sec_07">
+<!-- <section id="sec_07">
     <div class="container">
         <div class="row">
             <div class="col-12 tc">
@@ -979,7 +979,7 @@ dataLayer = [];
 
         </div>
     </div>
-</section>
+</section> -->
 
 <!--============================SECTION================================-->
 
